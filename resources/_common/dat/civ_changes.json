@@ -1,0 +1,206 @@
+{
+    "changes":
+    [
+        {
+            "note": "齐国(替换JURCHENS)独特单位的文本ID与科技树头像: 齐技击, 火牛",
+            "action": "modify",
+            "civ_id": "JURCHENS",
+            "internal_name": "EzsQi",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_qi.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000007, "description": 1021007},
+                {"name": 1000009, "description": 1021009}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/047_50730.png",
+                "/resources/uniticons/270_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500000,
+            "unique_tech_id_1": 3022,
+            "unique_tech_id_2": 3023,
+            "unique_unit_id": 4010,
+            "elite_unique_unit_id": 4011,
+            "unique_unit_upgrade_id": 3021,
+            "unique_unit_line": -394,
+            "name_string_id": 4500001,
+            "tech_tree_description_string_id": 4600001
+        },
+        {
+            "note": "秦国(替换CHINESE)独特单位的文本ID与科技树头像: 秦锐士, 秦畴骑, 秦弩",
+            "action": "modify",
+            "civ_id": "CHINESE",
+            "internal_name": "EzsQin",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_qin.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000010, "description": 1021010},
+                {"name": 1000016, "description": 1021016},
+                {"name": 1000018, "description": 1021018}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/110_50730.png",
+                "/resources/uniticons/429_50730.png",
+                "/resources/uniticons/80_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500100,
+            "unique_tech_id_1": 3057,
+            "unique_tech_id_2": 3058,
+            "unique_unit_id": 4012,
+            "elite_unique_unit_id": 4013,
+            "unique_unit_upgrade_id": 3052,
+            "unique_unit_line": -393,
+            "name_string_id": 4500002,
+            "tech_tree_description_string_id": 4600002
+        },
+        {
+            "note": "韩国(替换KOREANS)独特单位的文本ID与科技树头像: 韩弩手, 连弩战车, 韩卒",
+            "action": "modify",
+            "civ_id": "KOREANS",
+            "internal_name": "EzsHan",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_han.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000020, "description": 1021020},
+                {"name": 1000022, "description": 1021022},
+                {"name": 1000025, "description": 1021025}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/41_50730.png",
+                "/resources/uniticons/435_50730.png",
+                "/resources/uniticons/163_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500200,
+            "unique_tech_id_1": 3073,
+            "unique_tech_id_2": 3074,
+            "unique_unit_id": 4022,
+            "elite_unique_unit_id": 4023,
+            "unique_unit_upgrade_id": 3070,
+            "unique_unit_line": -390,
+            "name_string_id": 4500003,
+            "tech_tree_description_string_id": 4600003
+        },
+        {
+            "note": "魏国(替换TEUTONS)独特单位的文本ID与科技树头像: 魏武卒, 重装弩手, 苍头军, 信陵君, 门客",
+            "action": "modify",
+            "civ_id": "TEUTONS",
+            "internal_name": "EzsWei",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_wei.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000026, "description": 1021026},
+                {"name": 1000028, "description": 1021028},
+                {"name": 1000031, "description": 1021031},
+                {"name": 1000034, "description": 1021034},
+                {"name": 1000035, "description": 1021035}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/45_50730.png",
+                "/resources/uniticons/133_50730.png",
+                "/resources/uniticons/354_50730.png",
+                "/resources/uniticons/448_50730.png",
+                "/resources/uniticons/466_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500300,
+            "unique_tech_id_1": 3095,
+            "unique_tech_id_2": 3096,
+            "unique_unit_id": 4028,
+            "elite_unique_unit_id": 4029,
+            "unique_unit_upgrade_id": 3087,
+            "unique_unit_line": -387,
+            "name_string_id": 4500004,
+            "tech_tree_description_string_id": 4600004
+        },
+        {
+            "note": "赵国(替换MONGOLS)独特单位的文本ID与科技树头像: 赵边骑, 胡服戟兵, 赵飞骑",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "internal_name": "EzsZhao",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_zhao.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000036, "description": 1021036},
+                {"name": 1000038, "description": 1021038},
+                {"name": 1000039, "description": 1021039}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/42_50730.png",
+                "/resources/uniticons/104_50730.png",
+                "/resources/uniticons/371_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500400,
+            "unique_tech_id_1": 3109,
+            "unique_tech_id_2": 3110,
+            "unique_unit_id": 4039,
+            "elite_unique_unit_id": 4040,
+            "unique_unit_upgrade_id": 3106,
+            "unique_unit_line": -383,
+            "name_string_id": 4500005,
+            "tech_tree_description_string_id": 4600005
+        },
+        {
+            "note": "楚国(替换GOTHS)独特单位的文本ID与科技树头像: 申息之师, 连弩手",
+            "action": "modify",
+            "civ_id": "GOTHS",
+            "internal_name": "EzsChu",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_chu.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000040, "description": 1021040},
+                {"name": 1000042, "description": 1021042}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/434_50730.png",
+                "/resources/uniticons/036_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500500,
+            "unique_tech_id_1": 3124,
+            "unique_tech_id_2": 3125,
+            "unique_unit_id": 4043,
+            "elite_unique_unit_id": 4044,
+            "unique_unit_upgrade_id": 3120,
+            "unique_unit_line": -380,
+            "name_string_id": 4500006,
+            "tech_tree_description_string_id": 4600006
+        },
+        {
+            "note": "燕国(替换JAPANESE)独特单位的文本ID与科技树头像: 辽东骑兵, 刺客",
+            "action": "modify",
+            "civ_id": "JAPANESE",
+            "internal_name": "EzsYan",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_yan.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000045, "description": 1021045},
+                {"name": 1000047, "description": 1021047}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/099_50730.png",
+                "/resources/uniticons/113_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500600,
+            "unique_tech_id_1": 3137,
+            "unique_tech_id_2": 3138,
+            "unique_unit_id": 4048,
+            "elite_unique_unit_id": 4049,
+            "unique_unit_upgrade_id": 3135,
+            "unique_unit_line": -378,
+            "name_string_id": 4500007,
+            "tech_tree_description_string_id": 4600007
+        }
+    ]
+}

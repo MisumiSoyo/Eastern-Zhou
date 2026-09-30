@@ -1,0 +1,178 @@
+[
+    {
+        "note": "齐国时代2加成",
+        "action": "add",
+        "Comment": "Qi Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3012, 3013]
+    },
+    {
+        "note": "秦国时代2加成",
+        "action": "add",
+        "Comment": "Qin Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3028, 3029]
+    },
+    {
+        "note": "韩国时代2加成",
+        "action": "add",
+        "Comment": "Han Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3062, 3063]
+    },
+    {
+        "note": "魏国时代2加成",
+        "action": "add",
+        "Comment": "Wei Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3080, 3081]
+    },
+    {
+        "note": "赵国时代2加成",
+        "action": "add",
+        "Comment": "Zhao Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3099, 3100]
+    },
+    {
+        "note": "楚国时代2加成",
+        "action": "add",
+        "Comment": "Chu Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3113, 3114]
+    },
+    {
+        "note": "燕国时代2加成",
+        "action": "add",
+        "Comment": "Yan Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3128, 3129]
+    },
+    {
+        "note": "升级加成科技立即研究",
+        "action": "add",
+        "Comment": "Instant Upgrade Bonus",
+        "Instant": true,
+        "Type": null,
+        "Techs": [3012, 3013, 3014, 3015, 3016, 3017, 3028, 3029, 3030, 3031, 3032, 3033, 3062, 3063, 3064, 3065, 3066, 3067, 3080, 3081, 3082, 3083, 3084, 3085, 3099, 3100, 3101, 3102, 3103, 3104, 3113, 3114, 3115, 3116, 3117, 3118, 3128, 3129, 3130, 3131, 3132, 3133]
+    },
+    {
+        "note": "齐国时代3加成",
+        "action": "add",
+        "Comment": "Qi Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3014, 3015]
+    },
+    {
+        "note": "秦国时代3加成",
+        "action": "add",
+        "Comment": "Qin Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3030, 3031]
+    },
+    {
+        "note": "韩国时代3加成",
+        "action": "add",
+        "Comment": "Han Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3064, 3065]
+    },
+    {
+        "note": "魏国时代3加成",
+        "action": "add",
+        "Comment": "Wei Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3082, 3083]
+    },
+    {
+        "note": "赵国时代3加成",
+        "action": "add",
+        "Comment": "Zhao Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3101, 3102]
+    },
+    {
+        "note": "楚国时代3加成",
+        "action": "add",
+        "Comment": "Chu Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3115, 3116]
+    },
+    {
+        "note": "燕国时代3加成",
+        "action": "add",
+        "Comment": "Yan Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3130, 3131]
+    },
+    {
+        "note": "齐国时代4加成",
+        "action": "add",
+        "Comment": "Qi Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3016, 3017]
+    },
+    {
+        "note": "秦国时代4加成",
+        "action": "add",
+        "Comment": "Qin Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3032, 3033]
+    },
+    {
+        "note": "韩国时代4加成",
+        "action": "add",
+        "Comment": "Han Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3066, 3067]
+    },
+    {
+        "note": "魏国时代4加成",
+        "action": "add",
+        "Comment": "Wei Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3084, 3085]
+    },
+    {
+        "note": "赵国时代4加成",
+        "action": "add",
+        "Comment": "Zhao Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3103, 3104]
+    },
+    {
+        "note": "楚国时代4加成",
+        "action": "add",
+        "Comment": "Chu Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3117, 3118]
+    },
+    {
+        "note": "燕国时代4加成",
+        "action": "add",
+        "Comment": "Yan Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3132, 3133]
+    }
+]

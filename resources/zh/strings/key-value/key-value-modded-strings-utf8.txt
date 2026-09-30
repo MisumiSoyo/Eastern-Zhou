@@ -1,0 +1,619 @@
+// Eastern Zhou States (EZS) 模组中文文本
+// 条目格式: ID "文本"，支持 // 注释行
+// 条目按 ID 前缀分区（120xxx 文明），区间之间用空行分隔，新条目追加到同前缀组末尾
+
+
+
+
+1000001 "战车"
+1000002 "精锐战车"
+1000003 "战车弓兵"
+1000004 "精锐战车弓兵"
+1000005 "学者"
+1000006 "带着圣物的学者"
+1000007 "齐技击"
+1000008 "精锐齐技击"
+1000009 "火牛"
+1000010 "秦锐士"
+1000011 "精锐秦锐士"
+1000012 "征兵署"
+1000013 "弓手编队"
+1000014 "步兵编队"
+1000015 "骑兵编队"
+1000016 "秦畴骑"
+1000017 "精锐秦畴骑"
+1000018 "秦弩"
+1000019 "精锐秦弩"
+1000020 "韩弩手"
+1000021 "精锐韩弩手"
+1000022 "连弩战车"
+1000023 "精锐连弩战车"
+1000024 "营垒"
+1000025 "韩卒"
+1000026 "魏武卒"
+1000027 "精锐魏武卒"
+1000028 "重装弩手"
+1000029 "老练重装弩手"
+1000030 "精锐重装弩手"
+1000031 "苍头军"
+1000032 "老练苍头军"
+1000033 "精锐苍头军"
+1000034 "信陵君"
+1000035 "门客"
+1000036 "赵边骑"
+1000037 "精锐赵边骑"
+1000038 "胡服戟兵"
+1000039 "赵飞骑"
+1000040 "申息之师"
+1000041 "精锐申息之师"
+1000042 "连弩手"
+1000043 "老练连弩手"
+1000044 "精锐连弩手"
+1000045 "辽东骑兵"
+1000046 "精锐辽东骑兵"
+1000047 "刺客"
+
+
+
+1001001 "生产战车"
+1001002 "生产精锐战车"
+1001003 "战车弓兵"
+1001004 "精锐战车弓兵"
+1001005 "生产学者"
+1001007 "生产齐技击"
+1001008 "生产精锐齐技击"
+1001009 "生产火牛"
+1001010 "生产秦锐士"
+1001011 "生产精锐秦锐士"
+1001012 "建造征兵署"
+1001013 "征召弓手编队"
+1001014 "征召步兵编队"
+1001015 "征召骑兵编队"
+1001016 "生产秦畴骑"
+1001017 "生产精锐秦畴骑"
+1001018 "生产秦弩"
+1001019 "生产精锐秦弩"
+1001020 "生产韩弩手"
+1001021 "生产精锐韩弩手"
+1001022 "生产连弩战车"
+1001023 "生产精锐连弩战车"
+1001024 "建造营垒"
+1001025 "生产韩卒"
+1001026 "生产魏武卒"
+1001027 "生产精锐魏武卒"
+1001028 "生产重装弩手"
+1001029 "生产老练重装弩手"
+1001030 "生产精锐重装弩手"
+1001031 "生产苍头军"
+1001032 "生产老练苍头军"
+1001033 "生产精锐苍头军"
+1001034 "生产信陵君"
+1001035 "生产门客"
+1001036 "生产赵边骑"
+1001037 "生产精锐赵边骑"
+1001038 "生产胡服戟兵"
+1001039 "生产赵飞骑"
+1001040 "生产申息之师"
+1001041 "生产精锐申息之师"
+1001042 "生产连弩手"
+1001043 "生产老练连弩手"
+1001044 "生产精锐连弩手"
+1001045 "生产辽东骑兵"
+1001046 "生产精锐辽东骑兵"
+1001047 "生产刺客"
+
+
+
+1021001 "生产<b>战车<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n重装近战骑兵单位, 适于对抗步兵, 不适于对抗长矛兵。若无特殊说明, 本模组内新增的骑兵加成效果不会对战车生效。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵。"
+
+1021002 "生产<b>精锐战车<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n重装近战骑兵单位, 适于对抗步兵, 不适于对抗长矛兵。若无特殊说明, 本模组内新增的骑兵加成效果不会对战车生效。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵。"
+
+1021003 "生产<b>战车弓兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n重装远程骑兵单位, 适于对抗步兵。若无特殊说明, 本模组内新增的骑射手加成效果不会对战车弓兵生效。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手。"
+
+1021004 "生产<b>精锐战车弓兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n重装远程骑兵单位, 适于对抗步兵。若无特殊说明, 本模组内新增的骑射手加成效果不会对战车弓兵生效。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手。"
+
+1021005 "生产<b>学者<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\n经济单位, 可治疗友方单位 (船舰和攻城武器除外)。可收集圣物并带至学宫。\n<hp> <attack> <armor> <piercearmor>"
+
+1021007 "生产<b>齐技击<b> (<cost>, 10 <MATERIAL=MPIconGoodCPU>)\n齐国独特步兵, 可快速攻击和移动。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
+
+1021008 "生产<b>精锐齐技击<b> (<cost>, 10 <MATERIAL=MPIconGoodCPU>)\n齐国独特步兵, 可快速攻击和移动。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
+
+1021009 "生产<b>火牛<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n自爆单位, 可永久削减命中的敌人 1 护甲/盾牌, 这个效果可以叠加。\n升级: <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 爆破兵; 标签: 骑兵, 独特单位。"
+
+1021010 "生产<b>秦锐士<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\n秦国独特重装步兵, 击杀军事单位后可提升 10 生命值和 2 攻击力, 最多 4 次。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021011 "生产<b>精锐秦锐士<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\n秦国独特重装步兵, 击杀军事单位后可提升 10 生命值和 2 攻击力, 最多 4 次。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021012 "建造<b>征兵署<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n秦国独特建筑, 可批量征召军队。\n可征召: 弓手编队, 步兵编队, 骑兵编队。\n<hp> <attack> <armor> <piercearmor> <range>"
+
+1021013 "征召<b>弓手编队<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n获得 4 名步弓手系单位和 2 名长矛兵系单位。"
+
+1021014 "征召<b>步兵编队<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n获得 4 名民兵系单位和 1 名秦畴骑。"
+
+1021015 "征召<b>骑兵编队<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n获得 4 名斥候骑兵系单位和 1 名战车弓兵。"
+
+1021016 "生产<b>秦畴骑<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n秦国独特中型骑兵, 适合对抗射手, 不适于正面作战。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+
+1021017 "生产<b>精锐秦畴骑<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n秦国独特中型骑兵, 适合对抗射手, 不适于正面作战。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+
+1021018 "生产<b>秦弩<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n秦国独特弩炮, 射速快。\n升级: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 攻城武器; 标签: 攻城武器, 独特单位。"
+
+1021019 "生产<b>精锐秦弩<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n秦国独特弩炮, 射速快。\n升级: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 攻城武器; 标签: 攻城武器, 独特单位。"
+
+1021020 "生产<b>韩弩手<b> (<cost>, 16 <MATERIAL=MPIconGoodCPU>)\n韩国独特步行射手, 射程非常远。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021021 "生产<b>精锐韩弩手<b> (<cost>, 16 <MATERIAL=MPIconGoodCPU>)\n韩国独特步行射手, 射程非常远。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021022 "生产<b>连弩战车<b> (<cost>, 28 <MATERIAL=MPIconGoodCPU>)\n韩国独特攻城武器, 发射弩箭造成穿透伤害。\n升级: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵, 攻城武器, 独特单位, 重型攻城武器。"
+
+1021023 "生产<b>精锐连弩战车<b> (<cost>, 28 <MATERIAL=MPIconGoodCPU>)\n韩国独特攻城武器, 发射弩箭造成穿透伤害。\n升级: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 攻城武器; 标签: 骑兵, 攻城武器, 独特单位, 重型攻城武器。"
+
+1021024 "建造<b>营垒<b> (<cost>, 150 <MATERIAL=MPIconGoodCPU>)\n韩国独特防御建筑, 可生产和升级韩弩手。\n<hp> <attack> <armor> <piercearmor> <range>"
+
+1021025 "生产<b>韩卒<b> (<cost>)\n韩国独特精锐重装步兵, 只能通过选择韩卒精锐解锁。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021026 "生产<b>魏武卒<b> (<cost>, 12 <MATERIAL=MPIconGoodCPU>)\n魏国独特重装步兵, 护甲非常高。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021027 "生产<b>精锐魏武卒<b> (<cost>, 12 <MATERIAL=MPIconGoodCPU>)\n魏国独特重装步兵, 护甲非常高。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021028 "生产<b>重装弩手<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n魏国独特步弓手, 拥有较高的护甲。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021029 "生产<b>老练重装弩手<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU>)\n魏国独特步弓手, 拥有较高的护甲。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021030 "生产<b>精锐重装弩手<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU>)\n魏国独特步弓手, 拥有较高的护甲。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021031 "生产<b>苍头军<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n魏国独特轻装步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 枪兵, 独特单位。"
+
+1021032 "生产<b>老练苍头军<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n魏国独特轻装步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 枪兵, 独特单位。"
+
+1021033 "生产<b>精锐苍头军<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n魏国独特轻装步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 枪兵, 独特单位。"
+
+1021034 "生产<b>信陵君<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n魏国独特英雄骑射手, 可为周围己方和盟友部队提供攻击速度光环, 只能拥有 1 名。不可被转化。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑射手; 标签: 骑兵, 射手, 骑射手, 英雄, 独特单位。"
+
+1021035 "生产<b>门客<b> (<cost>)\n精英步兵单位, 战斗力强大, 不占用人口, 上限 10 名。可抵挡 25% 附加伤害。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021036 "生产<b>赵边骑<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n赵国独特骑射手, 适于对抗射手。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑射手; 标签: 骑兵, 射手, 骑射手, 独特单位。"
+
+1021037 "生产<b>精锐赵边骑<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n赵国独特骑射手, 适于对抗射手。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑射手; 标签: 骑兵, 射手, 骑射手, 独特单位。"
+
+1021038 "生产<b>胡服戟兵<b> (<cost>, 22 <MATERIAL=MPIconGoodCPU>)\n赵国独特轻型步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 枪兵。"
+
+1021039 "生产<b>赵飞骑<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n赵国独特轻型骑兵, 移动非常迅捷。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵。"
+
+1021040 "生产<b>申息之师<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\n楚国独特重装近战步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021041 "生产<b>精锐申息之师<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\n楚国独特重装近战步兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位。"
+
+1021042 "生产<b>连弩手<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n楚国独特步弓手, 一次发射 3 箭。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021043 "生产<b>老练连弩手<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU>)\n楚国独特步弓手, 一次发射 3 箭。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021044 "生产<b>精锐连弩手<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU>)\n楚国独特步弓手, 一次发射 3 箭。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 射手; 标签: 射手, 独特单位。"
+
+1021045 "生产<b>辽东骑兵<b> (<cost>, 15 <MATERIAL=MPIconGoodCPU>)\n燕国独特中型骑兵, 性价比高。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+
+1021046 "生产<b>精锐辽东骑兵<b> (<cost>, 12 <MATERIAL=MPIconGoodCPU>)\n燕国独特中型骑兵, 性价比高。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+
+1021047 "生产<b>刺客<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n一次性的轻型单位, 移动迅捷, 可以破坏敌方建筑或对重型单位造成可观伤害, 同时减少目标 25% 工作效率, 持续 30 秒。\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 爆破兵; 标签: 独特单位。"
+
+
+
+2000001 "精锐战车"
+2000002 "精锐战车弓兵"
+2000003 "精锐齐技击"
+2000004 "精锐秦锐士"
+2000005 "精锐秦畴骑"
+2000006 "精锐秦弩"
+2000007 "精锐韩弩手"
+2000008 "精锐连弩战车"
+2000009 "精锐魏武卒"
+2000010 "老练重装弩手"
+2000011 "精锐重装弩手"
+2000012 "老练苍头军"
+2000013 "精锐苍头军"
+2000014 "精锐赵边骑"
+2000015 "胡服戟兵"
+2000016 "赵飞骑"
+2000017 "精锐申息之师"
+2000018 "老练连弩手"
+2000019 "精锐连弩手"
+2000020 "精锐辽东骑兵"
+
+
+
+2001001 "升级到精锐战车"
+2001002 "升级到精锐战车弓兵"
+2001003 "升级到精锐齐技击"
+2001004 "升级到精锐秦锐士"
+2001005 "升级到精锐秦畴骑"
+2001006 "升级到精锐秦弩"
+2001007 "升级到精锐韩弩手"
+2001008 "升级到精锐连弩战车"
+2001009 "升级到精锐魏武卒"
+2001010 "升级到老练重装弩手"
+2001011 "升级到精锐重装弩手"
+2001012 "升级到老练苍头军"
+2001013 "升级到精锐苍头军"
+2001014 "升级到精锐赵边骑"
+2001015 "升级到胡服戟兵"
+2001016 "升级到赵飞骑"
+2001017 "升级到精锐申息之师"
+2001018 "升级到老练连弩手"
+2001019 "升级到精锐连弩手"
+2001020 "升级到精锐辽东骑兵"
+
+
+
+2021001 "升级到<b>精锐战车<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的战车升级, 生产更为强大的精锐战车。"
+2021002 "升级到<b>精锐战车弓兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的战车弓兵升级, 生产更为强大的精锐战车弓兵。"
+2021003 "升级到<b>精锐齐技击<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的齐技击升级, 生产更为强大的精锐齐技击。"
+2021004 "升级到<b>精锐秦锐士<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的秦锐士升级, 生产更为强大的精锐秦锐士。"
+2021005 "升级到<b>精锐秦畴骑<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的秦畴骑升级, 生产更为强大的精锐秦畴骑。"
+2021006 "升级到<b>精锐秦弩<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的秦弩升级, 生产更为强大的精锐秦弩。"
+2021007 "升级到<b>精锐韩弩手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的韩弩手升级, 生产更为强大的精锐韩弩手。"
+2021008 "升级到<b>精锐连弩战车<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的连弩战车升级, 生产更为强大的精锐连弩战车。"
+2021009 "升级到<b>精锐魏武卒<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的魏武卒升级, 生产更为强大的精锐魏武卒。"
+2021010 "升级到<b>老练重装弩手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的重装弩手升级, 生产更为强大的老练重装弩手。"
+2021011 "升级到<b>精锐重装弩手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练重装弩手升级, 生产更为强大的精锐重装弩手。"
+2021012 "升级到<b>老练苍头军<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的苍头军升级, 生产更为强大的老练苍头军。"
+2021013 "升级到<b>精锐苍头军<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练苍头军升级, 生产更为强大的精锐苍头军。"
+2021014 "升级到<b>精锐赵边骑<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的赵边骑升级, 生产更为强大的精锐赵边骑。"
+2021015 "升级到<b>胡服戟兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的长枪兵升级, 生产更为强大的胡服戟兵。"
+2021016 "升级到<b>赵飞骑<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的轻骑兵升级, 生产更为强大的赵飞骑。"
+2021017 "升级到<b>精锐申息之师<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的申息之师升级, 生产更为强大的精锐申息之师。"
+2021018 "升级到<b>老练连弩手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的连弩手升级, 生产更为强大的老练连弩手。"
+2021019 "升级到<b>精锐连弩手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练连弩手升级, 生产更为强大的精锐连弩手。"
+2021020 "升级到<b>精锐辽东骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的辽东骑兵升级, 生产更为强大的精锐辽东骑兵。"
+
+
+
+3000001 "鱼盐之利"
+3000002 "工商立国"
+3000003 "稷下学宫"
+3000004 "千乘之国"
+3000005 "孙膑兵法"
+3000006 "齐军整备"
+3000007 "弓弩制造"
+3000008 "武器标准化"
+3000009 "军功奖励"
+3000010 "变法"
+3000011 "算赋"
+3000012 "征兵"
+3000013 "冶铁中心"
+3000014 "术治"
+3000015 "能工巧匠"
+3000016 "关隘防御"
+3000017 "四战之地"
+3000018 "韩卒精锐"
+3000019 "尽地力"
+3000020 "精锐选拔"
+3000021 "武卒制"
+3000022 "平籴法"
+3000023 "信陵门客"
+3000024 "大梁城防"
+3000025 "胡服令"
+3000026 "畜牧业"
+3000027 "代地良马"
+3000028 "骑射训练"
+3000029 "死士"
+3000030 "突骑"
+3000031 "芍陂"
+3000032 "云梦泽"
+3000033 "巫风"
+3000034 "合纵"
+3000035 "车兵"
+3000036 "犀甲"
+3000037 "边地筑城"
+3000038 "胡骑"
+3000039 "禅让"
+3000040 "招贤令"
+3000041 "黄金台"
+3000042 "辽东都府"
+
+
+
+3001001 "鱼盐之利 (渔夫和渔船 +15% 采集效率)"
+3001002 "工商立国 (立即获得 200 木材，并研究大篷车科技)"
+3001003 "稷下学宫 (大学科技 -33% 研究费用)"
+3001004 "千乘之国 (战车 -20% 训练费用)"
+3001005 "孙膑兵法 (齐技击 +2 攻击力, +10% 移动速度)"
+3001006 "齐军整备 (立即获得 5 名步弓手系, 民兵系和斥候骑兵系单位)"
+3001007 "弓弩制造 (步弓手系 +10% 攻击速度, 升级时代再 +5%)"
+3001008 "武器标准化 (每项铁匠铺科技使军事单位 -1 木材和黄金费用)"
+3001009 "军功奖励 (秦锐士 +15 生命值, +33% 生产速度)"
+3001010 "变法 (科技研究费用 -15%)"
+3001011 "算赋 (每个单位每分钟额外产生 1.5 黄金)"
+3001012 "征兵 (获得 15 人口上限, 可建造征兵署以批量生产军队)"
+3001013 "冶铁中心 (立即获得时代 2 的所有铁匠铺科技)"
+3001014 "术治 (经济科技 -33% 费用, 并且研究不需要时间)"
+3001015 "能工巧匠 (解锁巨型投石机, 但在城堡时代 -33% 攻击速度)"
+3001016 "关隘防御 (获得 300 石料, 解锁营垒)"
+3001017 "四战之地 (建筑每分钟回复 600 生命值, -25% 受到的额外伤害)"
+3001018 "韩卒精锐 (立即并每 2 分钟获得 5 名韩卒)"
+3001019 "尽地力 (农田 -40% 建造费用)"
+3001020 "精锐选拔 (步兵和射手 +33% 攻击加成)"
+3001021 "武卒制 (魏武卒可在兵营生产)"
+3001022 "平籴法 (每分钟获得 75 食物)"
+3001023 "信陵门客 (信陵君可以花费重金召唤门客)"
+3001024 "大梁城防 (城堡, 城墙和城门 +40% 生命值)"
+3001025 "胡服令 (马厩科技 -40% 研究费用)"
+3001026 "畜牧业 (获得 6 只绵羊)"
+3001027 "代地良马 (骑兵单位 +10% 移动速度)"
+3001028 "骑射训练 (骑射手 +1 护甲/ 2 盾牌)"
+3001029 "死士 (民兵系 +4 攻击力, 立即升级到双手剑士)"
+3001030 "突骑 (斥候骑兵系攻击时在 0.5 格范围内造成 50% 溅射伤害)"
+3001031 "芍陂 (农田 +125 食物产量)"
+3001032 "云梦泽 (战船 +10% 生命值)"
+3001033 "巫风 (立即获得 3 名僧侣, 僧侣 +75% 生命值和治疗速度)"
+3001034 "合纵 (团队城堡 +33% 工作效率)"
+3001035 "车兵 (战车 +10% 移动速度, 提高附近步兵 15% 移动速度)"
+3001036 "犀甲 (申息之师 +30 生命值)"
+3001037 "边地筑城 (建筑 -20% 石料费用)"
+3001038 "胡骑 (斥候骑兵系免费升级, +1 盾牌)"
+3001039 "禅让 (升级到时代 4 的费用 -40%)"
+3001040 "招贤令 (村民和学者 +75% 生产速度)"
+3001041 "黄金台 (所有科技研究时间减少到 10 秒)"
+3001042 "辽东都府 (城堡和箭塔 +33% 攻击速度)"
+
+
+
+3021001 "鱼盐之利 (渔夫和渔船 +15% 采集效率)"
+3021002 "工商立国 (立即获得 200 木材，并研究大篷车科技)"
+3021003 "稷下学宫 (大学科技 -33% 研究费用)"
+3021004 "千乘之国 (战车 -20% 训练费用)"
+3021005 "孙膑兵法 (齐技击 +2 攻击力, +10% 移动速度)"
+3021006 "齐军整备 (立即获得 5 名步弓手系, 民兵系和斥候骑兵系单位)"
+3021007 "弓弩制造 (步弓手系 +10% 攻击速度, 升级时代再 +5%)"
+3021008 "武器标准化 (每项铁匠铺科技使军事单位 -1 木材和黄金费用)"
+3021009 "军功奖励 (秦锐士 +15 生命值, +33% 生产速度)"
+3021010 "变法 (科技研究费用 -15%)"
+3021011 "算赋 (每个单位每分钟额外产生 1.5 黄金)"
+3021012 "征兵 (获得 15 人口上限, 可建造征兵署以批量生产军队)"
+3021013 "冶铁中心 (立即获得时代 2 的所有铁匠铺科技)"
+3021014 "术治 (经济科技 -33% 费用, 并且研究不需要时间)"
+3021015 "能工巧匠 (解锁巨型投石机, 但在城堡时代 -33% 攻击速度)"
+3021016 "关隘防御 (获得 300 石料, 解锁营垒)"
+3021017 "四战之地 (建筑每分钟回复 600 生命值, -25% 受到的额外伤害)"
+3021018 "韩卒精锐 (立即并每 2 分钟获得 5 名韩卒)"
+3021019 "尽地力 (农田 -40% 建造费用)"
+3021020 "精锐选拔 (步兵和射手 +33% 攻击加成)"
+3021021 "武卒制 (魏武卒可在兵营生产)"
+3021022 "平籴法 (每分钟获得 75 食物)"
+3021023 "信陵门客 (信陵君可以花费重金召唤门客)"
+3021024 "大梁城防 (城堡, 城墙和城门 +40% 生命值)"
+3021025 "胡服令 (马厩科技 -40% 研究费用)"
+3021026 "畜牧业 (获得 6 只绵羊)"
+3021027 "代地良马 (骑兵单位 +10% 移动速度)"
+3021028 "骑射训练 (骑射手 +1 护甲/ 2 盾牌)"
+3021029 "死士 (民兵系 +4 攻击力, 立即升级到双手剑士)"
+3021030 "突骑 (斥候骑兵系攻击时在 0.5 格范围内造成 50% 溅射伤害)"
+3021031 "芍陂 (农田 +125 食物产量)"
+3021032 "云梦泽 (战船 +10% 生命值)"
+3021033 "巫风 (立即获得 3 名僧侣, 僧侣 +75% 生命值和治疗速度)"
+3021034 "合纵 (团队城堡 +33% 工作效率)"
+3021035 "车兵 (战车 +10% 移动速度, 提高附近步兵 15% 移动速度)"
+3021036 "犀甲 (申息之师 +30 生命值)"
+3021037 "边地筑城 (建筑 -20% 石料费用)"
+3021038 "胡骑 (斥候骑兵系免费升级, +1 盾牌)"
+3021039 "禅让 (升级到时代 4 的费用 -40%)"
+3021040 "招贤令 (村民和学者 +75% 生产速度)"
+3021041 "黄金台 (所有科技研究时间减少到 10 秒)"
+3021042 "辽东都府 (城堡和箭塔 +33% 攻击速度)"
+
+
+
+4000001 "海上霸主"
+4000002 "管仲之治"
+4000003 "垦草令"
+4000004 "始皇帝"
+4000005 "天下劲弩"
+4000006 "申不害之治"
+4000007 "虎符"
+4000008 "相王"
+4000009 "晋阳坚城"
+4000010 "边防军"
+4000011 "方城"
+4000012 "泰阿剑"
+4000013 "死士之风"
+4000014 "北地之怒"
+
+
+
+4001001 "研究海上霸主 (战船 +1 射程)"
+4001002 "研究管仲之治 (贸易单位额外产出 33% 食物)"
+4001003 "研究垦草令 (村民 +10% 工作效率)"
+4001004 "研究始皇帝 (所有单位 +10 生命值)"
+4001005 "研究天下劲弩 (步弓手系和韩弩手 +2 射程)"
+4001006 "研究申不害之治 (经济单位占用的人口空间 -10%)"
+4001007 "研究虎符 (每座城镇中心, 最多 5 座, 立即产出 5 名魏武卒)"
+4001008 "研究相王 (你和盟友每名军事单位获得 8 黄金)"
+4001009 "研究晋阳坚城 (箭塔和城堡 +2 射程)"
+4001010 "研究边防军 (骑兵和骑射手 -10% 训练费用, +100% 训练速度)"
+4001011 "研究方城 (建筑发射的箭矢可以穿透攻击)"
+4001012 "研究泰阿剑 (步兵 +4 攻击力)"
+4001013 "研究死士之风 (步兵每损失 10% 生命值, 攻击力 +1)"
+4001014 "研究北地之怒 (辽东骑兵的黄金费用替换为食物费用)"
+
+
+
+4021001 "研究<b>海上霸主<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n战船 +1 射程。"
+4021002 "研究<b>管仲之治<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n贸易单位额外产出 33% 食物。"
+4021003 "研究<b>垦草令<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n村民 +10% 工作效率。"
+4021004 "研究<b>始皇帝<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n所有单位 +10 生命值。"
+4021005 "研究<b>天下劲弩<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n步弓手系和韩弩手 +2 射程。"
+4021006 "研究<b>申不害之治<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n经济单位占用的人口空间 -10%。"
+4021007 "研究<b>虎符<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n每座城镇中心（最多 5 座）立即产出 5 名魏武卒。"
+4021008 "研究<b>相王<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n你和盟友根据当前各自的军事单位数量获得黄金, 每名军事单位提供 8 黄金。"
+4021009 "研究<b>晋阳坚城<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n箭塔和城堡 +2 射程。"
+4021010 "研究<b>边防军<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n骑兵和骑射手 -10% 训练费用, +100% 训练速度。"
+4021011 "研究<b>方城<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n建筑发射的箭矢可以穿透攻击。"
+4021012 "研究<b>泰阿剑<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n步兵 +4 攻击力。"
+4021013 "研究<b>死士之风<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n步兵每损失 10% 生命值, 攻击力 +1。"
+4021014 "研究<b>北地之怒<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n辽东骑兵的黄金费用替换为食物费用。"
+
+
+
+4500001 "齐国"
+4500002 "秦国"
+4500003 "韩国"
+4500004 "魏国"
+4500005 "赵国"
+4500006 "楚国"
+4500007 "燕国"
+
+
+
+4600001 "贸易 海军 战车\n\n• 战船 -30% 木材费用\n• 战车和战车弓兵 +2 护甲\n时代 2:\n  鱼盐之利 - 渔夫和渔船 +15% 采集效率\n  工商立国 - 立即获得 200 木材，并研究大篷车科技\n时代 3:\n  稷下学宫 - 大学科技 -33% 研究费用\n  千乘之国 - 战车 -20% 训练费用\n时代 4:\n  孙膑兵法 - 齐技击 +2 攻击力, +10% 移动速度\n  齐军整备 - 立即获得 5 名步弓手系, 民兵系和斥候骑兵系单位\n\n<b>独特单位：<b>\n齐技击 (轻型步兵, 移动迅速), 火牛 (可削减敌人护甲的自爆单位)\n\n<b>独特科技：<b>\n• 海上霸主 (所有战船 +1 射程)\n• 管仲之治 (贸易单位额外产出 33% 食物)\n\n<b>团队加成：<b>\n• 贸易单位 +25% 黄金产出"
+
+4600002 "步兵 强弩 征召\n\n• 每升级一个时代, 村民 +15 生命值\n• 步兵 -15% 训练费用\n时代 2:\n  弓弩制造 - 步弓手系 +10% 攻击速度, 升级时代再 +5%\n  武器标准化 - 每项铁匠铺科技使军事单位 -1 木材和黄金费用\n时代 3:\n  军功奖励 - 秦锐士 +15 生命值, +33% 生产速度\n  变法 - 科技研究费用 -15%\n时代 4:\n  算赋 - 每个单位每分钟额外产生 1.5 黄金\n  征兵 - 获得 15 人口上限, 可建造征兵署以批量生产军队\n\n<b>独特单位：<b>\n秦锐士 (重装步兵, 击杀军事单位后可提升生命值和攻击力), 秦畴骑 (适合对抗射手的中型骑兵), 秦弩 (价格更低、射速更快的弩炮)\n\n<b>独特科技：<b>\n• 垦草令 (村民 +10% 工作效率)\n• 始皇帝 (所有单位 +10 生命值)\n\n<b>团队加成：<b>\n• 军事单位 +15% 训练速度"
+
+4600003 "劲弩 冶炼 防御\n\n• 铁匠铺科技费用 -33%\n• 村民采矿消耗 -20%\n时代 2:\n  冶铁中心 - 立即获得时代 2 的所有铁匠铺科技\n  术治 - 经济科技 -33% 费用, 并且研究不需要时间\n时代 3:\n  能工巧匠 - 解锁巨型投石机, 但在城堡时代 -33% 攻击速度\n  关隘防御 - 获得 300 石料, 解锁营垒\n时代 4:\n  四战之地 - 建筑每分钟回复 600 生命值, -25% 受到的额外伤害\n  韩卒精锐 - 立即并每 2 分钟获得 5 名韩卒\n\n<b>独特单位：<b>\n韩弩手 (射程非常远的步行射手), 连弩战车 (发射弩箭造成穿透伤害的攻城武器), 营垒 (防御建筑), 韩卒 (精锐重装步兵)\n\n<b>独特科技：<b>\n• 天下劲弩 (步弓手系和韩弩手 +2 射程)\n• 申不害之治 (经济单位占用的人口空间 -10%)\n\n<b>团队加成：<b>\n• 靶场 +15% 工作效率"
+
+4600004 "步兵 重装 农业\n\n• 时代升级费用 -15%\n• 农田科技提供的产量加成翻倍\n时代 2:\n  尽地力 - 农田 -40% 建造费用\n  精锐选拔 - 步兵和射手 +33% 攻击加成\n时代 3:\n  武卒制 - 魏武卒可在兵营生产\n  平籴法 - 每分钟获得 75 食物\n时代 4:\n  信陵门客 - 信陵君可以花费重金召唤门客\n  大梁城防 - 城堡, 城墙和城门 +40% 生命值\n\n<b>独特单位：<b>\n魏武卒 (护甲非常高的重装步兵), 重装弩手 (拥有较高护甲的步行射手), 苍头军 (替代长矛兵的轻装步兵), 信陵君 (提供攻击速度光环的英雄骑射手), 门客 (不占用人口的精英步兵)\n\n<b>独特科技：<b>\n• 虎符 (每座城镇中心, 最多 5 座, 立即产出 5 名魏武卒)\n• 相王 (你和盟友每名军事单位获得 8 黄金)\n\n<b>团队加成：<b>\n• 城堡时代起步兵 +1 护甲"
+
+4600005 "骑兵 骑射手 防御\n\n• 牧羊人 -40% 采集消耗\n• 骑射手 +25% 攻击速度\n时代 2:\n  胡服令 - 马厩科技 -40% 研究费用\n  畜牧业 - 获得 6 只绵羊\n时代 3:\n  代地良马 - 骑兵单位 +10% 移动速度\n  骑射训练 - 骑射手 +1 护甲/ 2 盾牌\n时代 4:\n  死士 - 民兵系 +4 攻击力, 立即升级到双手剑士\n  突骑 - 斥候骑兵系攻击时在 0.5 格范围内造成 50% 溅射伤害\n\n<b>独特单位：<b>\n赵边骑 (适于对抗射手的骑射手), 胡服戟兵 (移速和攻速更快、盾防更高的轻型步兵), 赵飞骑 (移动非常迅捷的轻型骑兵)\n\n<b>独特科技：<b>\n• 晋阳坚城 (箭塔和城堡 +2 射程)\n• 边防军 (骑兵和骑射手 -10% 训练费用, +100% 训练速度)\n\n<b>团队加成：<b>\n• 马厩 +20% 工作效率"
+
+4600006 "步兵 战车 海军\n\n• 村民伐木速度 +15%\n• 战车 +20% 攻击速度\n时代 2:\n  芍陂 - 农田 +125 食物产量\n  云梦泽 - 战船 +10% 生命值\n时代 3:\n  巫风 - 立即获得 3 名僧侣, 僧侣 +75% 生命值和治疗速度\n  合纵 - 团队城堡 +33% 工作效率\n时代 4:\n  车兵 - 战车 +10% 移动速度, 提高附近步兵 15% 移动速度\n  犀甲 - 申息之师 +30 生命值\n\n<b>独特单位：<b>\n申息之师 (重装近战步兵, 适于对抗骑兵), 连弩手 (一次发射 3 箭的步行射手)\n\n<b>独特科技：<b>\n• 方城 (建筑发射的箭矢可以穿透攻击)\n• 泰阿剑 (步兵 +4 攻击力)\n\n<b>团队加成：<b>\n• 船坞 -25% 木材费用"
+
+4600007 "步兵 骑兵 防御\n\n• 村民打猎速度 +33%\n• 兵营科技费用 -50%\n时代 2:\n  边地筑城 - 建筑 -20% 石料费用\n  胡骑 - 斥候骑兵系免费升级, +1 盾牌\n时代 3:\n  禅让 - 升级到时代 4 的费用 -40%\n  招贤令 - 村民和学者 +75% 生产速度\n时代 4:\n  黄金台 - 所有科技研究时间减少到 10 秒\n  辽东都府 - 城堡和箭塔 +33% 攻击速度\n\n<b>独特单位：<b>\n辽东骑兵 (中型骑兵, 性价比高), 刺客 (一次性轻型单位, 可破坏建筑并减少目标工作效率)\n\n<b>独特科技：<b>\n• 死士之风 (步兵每损失 10% 生命值, 攻击力 +1)\n• 北地之怒 (辽东骑兵的黄金费用替换为食物费用)\n\n<b>团队加成：<b>\n• 城墙和城门 -50% 建造费用和时间"
+
+
+
+3500000 "16"
+3500001 "齐桓公"
+3500002 "管仲"
+3500003 "鲍叔牙"
+3500004 "齐景公"
+3500005 "晏婴"
+3500006 "司马穰苴"
+3500007 "齐威王"
+3500008 "邹忌"
+3500009 "齐宣王"
+3500010 "田忌"
+3500011 "孙膑"
+3500012 "孟尝君"
+3500013 "齐湣王"
+3500014 "匡章"
+3500015 "田单"
+3500016 "鲁仲连"
+
+
+
+
+3500100 "16"
+3500101 "秦穆公"
+3500102 "秦孝公"
+3500103 "秦惠文王"
+3500104 "秦昭襄王"
+3500105 "嬴政"
+3500106 "商鞅"
+3500107 "百里奚"
+3500108 "张仪"
+3500109 "范雎"
+3500110 "吕不韦"
+3500111 "李斯"
+3500112 "白起"
+3500113 "王翦"
+3500114 "司马错"
+3500115 "蒙恬"
+3500116 "李信"
+
+
+
+
+3500200 "15"
+3500201 "韩厥"
+3500202 "韩景侯"
+3500203 "韩哀侯"
+3500204 "韩昭侯"
+3500205 "韩宣惠王"
+3500206 "韩襄王"
+3500207 "韩王安"
+3500208 "申不害"
+3500209 "韩非"
+3500210 "张平"
+3500211 "张良"
+3500212 "公仲侈"
+3500213 "暴鸢"
+3500214 "申差"
+3500215 "冯亭"
+
+
+
+
+3500300 "16"
+3500301 "魏文侯"
+3500302 "魏武侯"
+3500303 "魏惠王"
+3500304 "魏襄王"
+3500305 "魏昭王"
+3500306 "魏安釐王"
+3500307 "魏景湣王"
+3500308 "魏王假"
+3500309 "李悝"
+3500310 "吴起"
+3500311 "西门豹"
+3500312 "乐羊"
+3500313 "庞涓"
+3500314 "信陵君"
+3500315 "翟璜"
+3500316 "公叔痤"
+
+
+
+
+3500400 "16"
+3500401 "赵襄子"
+3500402 "赵烈侯"
+3500403 "赵武灵王"
+3500404 "赵惠文王"
+3500405 "赵孝成王"
+3500406 "赵悼襄王"
+3500407 "赵幽缪王"
+3500408 "蔺相如"
+3500409 "平原君"
+3500410 "肥义"
+3500411 "虞卿"
+3500412 "廉颇"
+3500413 "李牧"
+3500414 "赵奢"
+3500415 "庞煖"
+3500416 "乐乘"
+
+
+
+
+3500500 "15"
+3500501 "楚武王"
+3500502 "楚文王"
+3500503 "楚庄王"
+3500504 "楚悼王"
+3500505 "楚威王"
+3500506 "楚怀王"
+3500507 "孙叔敖"
+3500508 "屈原"
+3500509 "宋玉"
+3500510 "申包胥"
+3500511 "养由基"
+3500512 "子玉"
+3500513 "昭阳"
+3500514 "庄蹻"
+3500515 "项燕"
+
+
+
+
+3500600 "13"
+3500601 "燕召公"
+3500602 "燕王哙"
+3500603 "燕昭王"
+3500604 "燕惠王"
+3500605 "燕武成王"
+3500606 "燕王喜"
+3500607 "太子丹"
+3500608 "郭隗"
+3500609 "剧辛"
+3500610 "乐毅"
+3500611 "秦开"
+3500612 "骑劫"
+3500613 "田光"

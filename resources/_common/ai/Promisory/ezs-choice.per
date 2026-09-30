@@ -1,0 +1,37 @@
+(include "ezs-choice.xs")
+
+(defconst ezs-player-id 512)
+
+; 开局: 把 my-player-number 写入 goal 512, 供 XS 读取
+; (my-player-number 不兼容 up-get-fact/up-compare, 用 up-modify-sn 中转)
+(defrule
+	(true)
+=>
+	(set-goal ezs-player-id my-player-number)
+	(disable-self)
+)
+
+(defconst ezs-choose-feudal   "ezsChooseFeudal")
+(defconst ezs-choose-castle   "ezsChooseCastle")
+(defconst ezs-choose-imperial "ezsChooseImperial")
+
+(defrule
+	(current-age == feudal-age)
+=>
+	(xs-script-call ezs-choose-feudal)
+	(disable-self)
+)
+
+(defrule
+	(current-age == castle-age)
+=>
+	(xs-script-call ezs-choose-castle)
+	(disable-self)
+)
+
+(defrule
+	(current-age == imperial-age)
+=>
+	(xs-script-call ezs-choose-imperial)
+	(disable-self)
+)

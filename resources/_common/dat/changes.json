@@ -1,0 +1,258 @@
+{
+    "includes":
+    [
+        "cost_changes.json",
+        "techtrees.json"
+    ],
+    "copy_from_old_datafile":
+    {
+        "unit_list":
+        [
+        ],
+        "tech_list":
+        [
+        ],
+        "effect_list":
+        [
+        ],
+        "resource_list":
+        [
+        ]
+    },
+    "effect_adjustments":
+    [
+        {
+            "type": "adjustment",
+            "name": "禁用EZS新增的区域单位",
+            "effect_id": 79,
+            "function_id": 10002
+        },
+        {
+            "type": "delete",
+            "name": "齐国移除原有科技树",
+            "effect_id": 986,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "replace",
+            "name": "齐国团队加成改动",
+            "effect_id": 987,
+            "commands": [[5, -1, 2, 13, 1.25],
+                         [5, -1, 19, 13, 1.25]]
+        },
+        {
+            "type": "adjustment",
+            "name": "血统调整",
+            "effect_id": 450,
+            "function_id": 10003
+        },
+        {
+            "type": "adjustment",
+            "name": "畜牧调整",
+            "effect_id": 39,
+            "function_id": 10004
+        },
+        {
+            "type": "replace",
+            "name": "秦国团队加成改动",
+            "effect_id": 402,
+            "commands": [[5, -1, 0, 101, 0.869565],
+                         [5, -1, 6, 101, 0.869565],
+                         [5, -1, 12, 101, 0.869565],
+                         [5, -1, 13, 101, 0.869565],
+                         [5, -1, 22, 101, 0.869565],
+                         [5, -1, 23, 101, 0.869565],
+                         [5, -1, 28, 101, 0.869565],
+                         [5, -1, 35, 101, 0.869565],
+                         [5, -1, 36, 101, 0.869565],
+                         [5, -1, 44, 101, 0.869565],
+                         [5, -1, 47, 101, 0.869565],
+                         [5, -1, 51, 101, 0.869565],
+                         [5, -1, 54, 101, 0.869565],
+                         [5, -1, 55, 101, 0.869565]]
+        },
+        {
+            "type": "replace",
+            "name": "韩国团队加成改动",
+            "effect_id": 505,
+            "commands": [[5, 87, -1, 13, 1.15],
+                         [5, 10, -1, 13, 1.15],
+                         [5, 14, -1, 13, 1.15],
+                         [5, 2438, -1, 13, 1.15]]
+        },
+        {
+            "type": "replace",
+            "name": "魏国团队加成改动",
+            "effect_id": 404,
+            "commands": [8, 3078, 12, -1, 0]
+        },
+        {
+            "type": "replace",
+            "name": "赵国团队加成改动",
+            "effect_id": 407,
+            "commands": [[5, 101, -1, 13, 1.15],
+                         [5, 86, -1, 13, 1.15],
+                         [5, 153, -1, 13, 1.15],
+                         [5, 2439, -1, 13, 1.15]]
+        },
+        {
+            "type": "replace",
+            "name": "楚国团队加成",
+            "effect_id": 405,
+            "commands": [[5, 45, -1, 100, 0.75],
+                         [5, 47, -1, 100, 0.75],
+                         [5, 51, -1, 100, 0.75],
+                         [5, 133, -1, 100, 0.75]]
+        },
+        {
+            "type": "replace",
+            "name": "燕国团队加成",
+            "effect_id": 406,
+            "commands": [[5, -1, 27, 101, 0.5],
+                         [5, -1, 39, 101, 0.5]]
+        }
+    ],
+    "unit_copies":
+    [
+        {
+            "note": "模组文明改为东亚建筑风格",
+            "source_civ": 6,
+            "unit_id": "all",
+            "civs": [4, 3],
+            "search": {"field": "class_", "op": "in", "value": [3, 27, 39, 49, 52]},
+            "attributes": ["standing_graphic",
+                           "dying_graphic",
+                           "undead_graphic",
+                           "damage_graphics",
+                           "creatable.garrison_graphic",
+                           "creatable.spawning_graphic",
+                           "creatable.upgrade_graphic",
+                           "creatable.hero_glow_graphic",
+                           "creatable.idle_attack_graphic",
+                           "creatable.special_graphic",
+                           "type_50.attack_graphic",
+                           "type_50.attack_graphic_2"]
+        }
+    ],
+    "unit_changes":
+    [
+        {
+            "note": "民兵系盾牌加强",
+            "unit_id": [74, 75, 77, 473],
+            "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", 2]],
+                           ["creatable.displayed_pierce_armour", 2]]
+        },
+        {
+            "note": "剑士生命值加强",
+            "unit_id": [75],
+            "attributes": [["hit_points", 50]]
+        },
+        {
+            "note": "长剑士护甲和生命值提升",
+            "unit_id": [77],
+            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
+                           ["type_50.displayed_melee_armour", 2],
+                           ["hit_points", 65]]
+        },
+        {
+            "note": "精锐剑士护甲提升, 生命值提升",
+            "unit_id": [473],
+            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
+                           ["type_50.displayed_melee_armour", 2],
+                           ["hit_points", 70]]
+        },
+        {
+            "note": "冠军剑士护甲提升, 生命值提升",
+            "unit_id": [567],
+            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
+                           ["type_50.displayed_melee_armour", 2],
+                           ["type_50.armours", "list_search", ["class_", 3], ["amount", 3]],
+                           ["creatable.displayed_pierce_armour", 3],
+                           ["hit_points", 75]]
+        },
+        {
+            "note": "磨坊, 伐木场, 采矿场建造价格减少",
+            "unit_id": [68, 129, 130, 131, 562, 563, 564, 565, 584, 585, 586, 587],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 50]]]
+        },
+        {
+            "note": "定居点建造价格减少",
+            "unit_id": [2556, 2558, 2560],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 75]]]
+        },
+        {
+            "note": "骡车建造价格减少, 生命值减少",
+            "unit_id": [1808],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 30]],
+                           ["hit_points", 200]]
+        },
+        {
+            "note": "前三个时代的经济建筑生命值减少",
+            "unit_id": [68, 129, 130, 562, 563, 564, 584, 585, 586, 1711, 1720, 1734],
+            "attributes": [["hit_points", "add", -200]]
+        },
+        {
+            "note": "村民基础移动速度提升",
+            "unit_id": "all",
+            "search": ["class_", 4],
+            "attributes": [["speed", 0.9]]
+        },
+        {
+            "note": "标枪骑兵训练位置移动",
+            "unit_id": [1010, 1012],
+            "attributes": [["creatable.train_locations[0].button_id", 21],
+                           ["creatable.train_locations[0].hot_key_id", 18012]]
+        },
+        {
+            "note": "兵营, 靶场, 马厩 费用降低至 150",
+            "unit_id": [10, 12, 14, 20, 86, 87, 101, 132, 153, 498, 2437, 2438, 2439],
+            "attributes": [["creatable.resource_costs[0].amount", 150]]
+        }
+    ],
+    "tech_changes":
+    [   {
+            "note": "长剑士科技改动",
+            "tech_id": 207,
+            "attributes": [["resource_costs", "list_search", ["type", 0], ["amount", 175]],
+                           ["resource_costs", "list_search", ["type", 3], ["amount", 125]],
+                           ["research_locations[0].research_time", 30]]
+        },
+        {
+            "note": "精锐剑士科技改动",
+            "tech_id": 217,
+            "attributes": [["resource_costs", "list_search", ["type", 0], ["amount", 250]],
+                           ["resource_costs", "list_search", ["type", 3], ["amount", 200]],
+                           ["research_locations[0].research_time", 45]]
+        },
+        {
+            "note": "精锐标枪骑兵位置改动",
+            "tech_id": 599,
+            "attributes": [["research_locations[0].button_id", 26],
+                           ["research_locations[0].hot_key_id", 18022]]
+        },
+        {
+            "note": "移除各文明原有文明加成",
+            "tech_id": "all",
+            "search": [["civ", "in", [52, 6, 18, 4, 12, 3, 5]],
+                       ["id", "<=", 3000],
+                       ["id", "not in", [986, 534, 546, 532, 540, 531, 533]]],
+            "attributes": [["civ", "add", 100]]
+        }
+    ],
+    "resource_changes":
+    [
+        {
+            "note": "文明语言设置为汉语",
+            "civs": [18, 4, 12, 3, 5],
+            "resource_id": 18,
+            "num": 6
+        },
+        {
+            "note": "资源805: 各模组文明可选科技起始ID (楚/魏/燕/秦/赵/韩/齐)",
+            "civs": [3, 4, 5, 6, 12, 18, 52],
+            "resource_id": 805,
+            "op": "set",
+            "num": [3113, 3080, 3128, 3028, 3099, 3062, 3012]
+        }
+    ]
+}
