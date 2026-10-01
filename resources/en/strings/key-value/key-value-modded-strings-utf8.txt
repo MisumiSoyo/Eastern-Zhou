@@ -342,14 +342,14 @@
 3001030 "Shock Cavalry (Scout Cavalry-line attacks deal 50% trample damage in 0.5 tiles)"
 3001031 "Shaobei Dam (Farms +125 food)"
 3001032 "Yunmeng Marsh (War ships +10% hit points)"
-3001033 "Shamanism (Receive 3 Monks immediately; Monks +75% hit points and healing speed)"
+3001033 "Shamanism (Receive 3 Monks immediately; Monks +40% hit points and healing speed)"
 3001034 "Vertical Alliance (Team Castles +33% work rate)"
 3001035 "Chariotry (Chariots +10% movement speed; nearby infantry +15% movement speed)"
 3001036 "Rhinoceros Armor (Shenxi Army +30 hit points)"
 3001037 "Frontier Fortification (Buildings -20% stone cost)"
 3001038 "Hu Cavalry (Scout Cavalry-line upgrades free, +1 pierce armor)"
 3001039 "Abdication (Advancing to Age 4 -40% cost)"
-3001040 "Edict of Recruitment (Villagers and Scholars +75% production speed)"
+3001040 "Edict of Recruitment (Villagers and Monks +75% production speed)"
 3001041 "Golden Terrace (All technologies research in 10 seconds)"
 3001042 "Liaodong Commandery (Castles and towers +33% attack speed)"
 
@@ -387,14 +387,14 @@
 3021030 "Shock Cavalry (Scout Cavalry-line attacks deal 50% trample damage in 0.5 tiles)"
 3021031 "Shaobei Dam (Farms +125 food)"
 3021032 "Yunmeng Marsh (War ships +10% hit points)"
-3021033 "Shamanism (Receive 3 Monks immediately; Monks +75% hit points and healing speed)"
+3021033 "Shamanism (Receive 3 Monks immediately; Monks +40% hit points and healing speed)"
 3021034 "Vertical Alliance (Team Castles +33% work rate)"
 3021035 "Chariotry (Chariots +10% movement speed; nearby infantry +15% movement speed)"
 3021036 "Rhinoceros Armor (Shenxi Army +30 hit points)"
 3021037 "Frontier Fortification (Buildings -20% stone cost)"
 3021038 "Hu Cavalry (Scout Cavalry-line upgrades free, +1 pierce armor)"
 3021039 "Abdication (Advancing to Age 4 -40% cost)"
-3021040 "Edict of Recruitment (Villagers and Scholars +75% production speed)"
+3021040 "Edict of Recruitment (Villagers and Monks +75% production speed)"
 3021041 "Golden Terrace (All technologies research in 10 seconds)"
 3021042 "Liaodong Commandery (Castles and towers +33% attack speed)"
 
@@ -410,7 +410,7 @@
 4000008 "Mutual Kingship"
 4000009 "Jinyang Stronghold"
 4000010 "Frontier Army"
-4000011 "Fangcheng Wall"
+4000011 "Fang Cheng"
 4000012 "Tai'e Sword"
 4000013 "Spirit of the Dare-to-Die"
 4000014 "Fury of the Northern Frontier"
@@ -427,7 +427,7 @@
 4001008 "Research Mutual Kingship (You and your allies receive 8 gold per military unit)"
 4001009 "Research Jinyang Stronghold (Towers and Castles +2 range)"
 4001010 "Research Frontier Army (Cavalry and mounted archers -10% training cost, +100% training speed)"
-4001011 "Research Fangcheng Wall (Arrows fired by buildings deal pass-through damage)"
+4001011 "Research Fang Cheng (Arrows fired by buildings deal pass-through damage)"
 4001012 "Research Tai'e Sword (Infantry +4 attack)"
 4001013 "Research Spirit of the Dare-to-Die (Infantry gain +1 attack per 10% hit points lost)"
 4001014 "Research Fury of the Northern Frontier (Liaodong Cavalry's gold cost replaced by food cost)"
@@ -444,7 +444,7 @@
 4021008 "Research <b>Mutual Kingship<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nYou and your allies receive gold based on your current military unit count: 8 gold per military unit."
 4021009 "Research <b>Jinyang Stronghold<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTowers and Castles +2 range."
 4021010 "Research <b>Frontier Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalry and mounted archers -10% training cost, +100% training speed."
-4021011 "Research <b>Fangcheng Wall<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nArrows fired by buildings deal pass-through damage."
+4021011 "Research <b>Fang Cheng<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nArrows fired by buildings deal pass-through damage."
 4021012 "Research <b>Tai'e Sword<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantry +4 attack."
 4021013 "Research <b>Spirit of the Dare-to-Die<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nInfantry gain +1 attack per 10% hit points lost."
 4021014 "Research <b>Fury of the Northern Frontier<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nLiaodong Cavalry's gold cost replaced by food cost."
@@ -471,9 +471,9 @@
 
 4600005 "Cavalry  Mounted Archers  Defense\n\n• Shepherds deplete herds -40% slower\n• Mounted archers +25% attack speed\nAge 2:\n  Hu Clothing Decree - Stable technologies -40% research cost\n  Animal Husbandry - Receive 6 Sheep\nAge 3:\n  Fine Horses of Dai - Cavalry units +10% movement speed\n  Mounted Archery Training - Mounted archers +1 armor/+2 pierce armor\nAge 4:\n  Dare-to-Die Corps - Militia line +4 attack; upgraded to Two-Handed Swordsmen immediately\n  Shock Cavalry - Scout Cavalry-line attacks deal 50% trample damage in 0.5 tiles\n\n<b>Unique Units:<b>\nZhao Border Cavalry (mounted archer, strong vs. archers), Hufu Halberdier (light infantry with faster speed/attack and higher pierce armor), Zhao Feiqi (extremely fast light cavalry)\n\n<b>Unique Technologies:<b>\n• Jinyang Stronghold (towers and Castles +2 range)\n• Frontier Army (cavalry and mounted archers -10% training cost, +100% training speed)\n\n<b>Team Bonus:<b>\n• Stable +20% work rate"
 
-4600006 "Infantry  Chariots  Navy\n\n• Villagers chop wood +15% faster\n• Chariots +20% attack speed\nAge 2:\n  Shaobei Dam - Farms +125 food\n  Yunmeng Marsh - War ships +10% hit points\nAge 3:\n  Shamanism - Receive 3 Monks immediately; Monks +75% hit points and healing speed\n  Vertical Alliance - Team Castles +33% work rate\nAge 4:\n  Chariotry - Chariots +10% movement speed; nearby infantry +15% movement speed\n  Rhinoceros Armor - Shenxi Army +30 hit points\n\n<b>Unique Units:<b>\nShenxi Army (heavy melee infantry, strong vs. cavalry), Repeater Crossbowman (foot archer firing 3 bolts at once)\n\n<b>Unique Technologies:<b>\n• Fangcheng Wall (arrows fired by buildings deal pass-through damage)\n• Tai'e Sword (infantry +4 attack)\n\n<b>Team Bonus:<b>\n• Dock -25% wood cost"
+4600006 "Infantry  Chariots  Navy\n\n• Villagers chop wood +15% faster\n• Chariots +20% attack speed\nAge 2:\n  Shaobei Dam - Farms +125 food\n  Yunmeng Marsh - War ships +10% hit points\nAge 3:\n  Shamanism - Receive 3 Monks immediately; Monks +40% hit points and healing speed\n  Vertical Alliance - Team Castles +33% work rate\nAge 4:\n  Chariotry - Chariots +10% movement speed; nearby infantry +15% movement speed\n  Rhinoceros Armor - Shenxi Army +30 hit points\n\n<b>Unique Units:<b>\nShenxi Army (heavy melee infantry, strong vs. cavalry), Repeater Crossbowman (foot archer firing 3 bolts at once)\n\n<b>Unique Technologies:<b>\n• Fang Cheng (arrows fired by buildings deal pass-through damage)\n• Tai'e Sword (infantry +4 attack)\n\n<b>Team Bonus:<b>\n• Dock -25% wood cost"
 
-4600007 "Infantry  Cavalry  Defense\n\n• Villagers hunt +33% faster\n• Barracks technologies -50% cost\nAge 2:\n  Frontier Fortification - Buildings -20% stone cost\n  Hu Cavalry - Scout Cavalry-line upgrades free, +1 pierce armor\nAge 3:\n  Abdication - Advancing to Age 4 -40% cost\n  Edict of Recruitment - Villagers and Scholars +75% production speed\nAge 4:\n  Golden Terrace - All technologies research in 10 seconds\n  Liaodong Commandery - Castles and towers +33% attack speed\n\n<b>Unique Units:<b>\nLiaodong Cavalry (cost-effective medium cavalry), Assassin (one-time-use light unit; damages buildings and reduces target work rate)\n\n<b>Unique Technologies:<b>\n• Spirit of the Dare-to-Die (infantry gain +1 attack per 10% hit points lost)\n• Fury of the Northern Frontier (Liaodong Cavalry's gold cost replaced by food cost)\n\n<b>Team Bonus:<b>\n• Walls and gates -50% construction cost and time"
+4600007 "Infantry  Cavalry  Defense\n\n• Villagers hunt +33% faster\n• Barracks technologies -50% cost\nAge 2:\n  Frontier Fortification - Buildings -20% stone cost\n  Hu Cavalry - Scout Cavalry-line upgrades free, +1 pierce armor\nAge 3:\n  Abdication - Advancing to Age 4 -40% cost\n  Edict of Recruitment - Villagers and Monks +75% production speed\nAge 4:\n  Golden Terrace - All technologies research in 10 seconds\n  Liaodong Commandery - Castles and towers +33% attack speed\n\n<b>Unique Units:<b>\nLiaodong Cavalry (cost-effective medium cavalry), Assassin (one-time-use light unit; damages buildings and reduces target work rate)\n\n<b>Unique Technologies:<b>\n• Spirit of the Dare-to-Die (infantry gain +1 attack per 10% hit points lost)\n• Fury of the Northern Frontier (Liaodong Cavalry's gold cost replaced by food cost)\n\n<b>Team Bonus:<b>\n• Walls and gates -50% construction cost and time"
 
 
 

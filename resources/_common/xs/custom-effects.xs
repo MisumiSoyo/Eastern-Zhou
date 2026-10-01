@@ -92,7 +92,7 @@ void EffectFunction10010(int playerId = -1)
 void main()
 {
     xsChatData("Mod: Eastern Zhou States");
-    xsChatData("Patch: 1.0  2026.09.30");
+    xsChatData("Patch: 1.0a  2026.09.30");
     xsChatData("Author: Misumi Soyo");
 
     vector pos = xsVectorSet(0.0, 0.0, 0.0);
