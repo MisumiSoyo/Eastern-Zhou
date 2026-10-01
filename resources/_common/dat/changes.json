@@ -110,6 +110,30 @@
             "effect_id": 406,
             "commands": [[5, -1, 27, 101, 0.5],
                          [5, -1, 39, 101, 0.5]]
+        },
+        {
+            "type": "adjustment",
+            "name": "征召调整",
+            "effect_id": 315,
+            "function_id": 10011
+        },
+        {
+            "type": "adjustment",
+            "name": "化学调整",
+            "effect_id": 47,
+            "function_id": 10012
+        },
+        {
+            "type": "adjustment",
+            "name": "攻城技师调整",
+            "effect_id": 375,
+            "function_id": 10013
+        },
+        {
+            "type": "adjustment",
+            "name": "帕提亚战术调整",
+            "effect_id": 452,
+            "function_id": 10014
         }
     ],
     "unit_copies":

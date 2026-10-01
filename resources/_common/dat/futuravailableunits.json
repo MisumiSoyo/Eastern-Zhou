@@ -64581,20 +64581,9 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 45,
-                        "Name": "Faith",
-                        "RequiredAge": 4,
-                        "RequiredTechID": 46
-                    },
-                    {
                         "ID": 316,
                         "Name": "Redemption",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 233,
-                        "Name": "Illumination",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 319,
@@ -64615,11 +64604,6 @@
                         "ID": 438,
                         "Name": "Theocracy",
                         "RequiredAge": 4
-                    },
-                    {
-                        "ID": 439,
-                        "Name": "Heresy",
-                        "RequiredAge": 3
                     },
                     {
                         "ID": 231,
@@ -67534,6 +67518,12 @@
                         "ID": 82,
                         "Name": "Chain Barding Armor",
                         "RequiredAge": 3
+                    },
+                    {
+                        "ID": 80,
+                        "Name": "Plate Barding Armor",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 82
                     },
                     {
                         "ID": 74,

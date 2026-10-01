@@ -3,8 +3,8 @@
 // Entries are grouped by ID prefix (120xxx civs / 500xxx techs / 700xxx units etc.), separated by blank lines; append new entries to the end of their group
 
 
-1000001 "Chariot"
-1000002 "Elite Chariot"
+1000001 "War Chariot"
+1000002 "Elite War Chariot"
 1000003 "Chariot Archer"
 1000004 "Elite Chariot Archer"
 1000005 "Scholar"
@@ -53,8 +53,8 @@
 
 
 
-1001001 "Train Chariot"
-1001002 "Train Elite Chariot"
+1001001 "Train War Chariot"
+1001002 "Train Elite War Chariot"
 1001003 "Chariot Archer"
 1001004 "Elite Chariot Archer"
 1001005 "Train Scholar"
@@ -102,13 +102,13 @@
 
 
 
-1021001 "Train <b>Chariot<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy melee cavalry unit. Strong vs. infantry; weak vs. Spearmen. Unless stated otherwise, new cavalry bonuses in this mod do not affect Chariots.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry."
+1021001 "Train <b>War Chariot<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy melee cavalry unit. Strong vs. infantry; weak vs. Spearmen. Unless stated otherwise, new cavalry bonuses in this mod do not affect War Chariots.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry."
 
-1021002 "Train <b>Elite Chariot<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy melee cavalry unit. Strong vs. infantry; weak vs. Spearmen. Unless stated otherwise, new cavalry bonuses in this mod do not affect Chariots.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry."
+1021002 "Train <b>Elite War Chariot<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy melee cavalry unit. Strong vs. infantry; weak vs. Spearmen. Unless stated otherwise, new cavalry bonuses in this mod do not affect War Chariots.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry."
 
-1021003 "Train <b>Chariot Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy ranged cavalry unit. Strong vs. infantry. Unless stated otherwise, new mounted archer bonuses in this mod do not affect Chariot Archers.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Mounted archer; Armor classes: Archer, Cavalry, Mounted archer."
+1021003 "Train <b>Chariot Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy ranged cavalry unit. Strong vs. infantry. Unless stated otherwise, new mounted archer bonuses in this mod do not affect Chariot Archers. This unit is not affected by Parthian Tactics.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Mounted archer; Armor classes: Archer, Cavalry, Mounted archer."
 
-1021004 "Train <b>Elite Chariot Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy ranged cavalry unit. Strong vs. infantry. Unless stated otherwise, new mounted archer bonuses in this mod do not affect Chariot Archers.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Mounted archer; Armor classes: Archer, Cavalry, Mounted archer."
+1021004 "Train <b>Elite Chariot Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nHeavy ranged cavalry unit. Strong vs. infantry. Unless stated otherwise, new mounted archer bonuses in this mod do not affect Chariot Archers. This unit is not affected by Parthian Tactics.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Mounted archer; Armor classes: Archer, Cavalry, Mounted archer."
 
 1021005 "Train <b>Scholar<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nEconomic unit. Heals friendly units (except ships and siege weapons). Can pick up Relics and carry them to the Academy.\n<hp> <attack> <armor> <piercearmor>"
 
@@ -142,7 +142,7 @@
 
 1021021 "Train <b>Elite Han Crossbowman<b> (<cost>, 16 <MATERIAL=MPIconGoodCPU>)\nHan unique foot archer. Exceptionally long range.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Armor classes: Archer, Unique unit."
 
-1021022 "Train <b>Repeater Crossbow Chariot<b> (<cost>, 28 <MATERIAL=MPIconGoodCPU>)\nHan unique siege weapon. Fires bolts that deal pass-through damage.\nUpgrades: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry, Siege weapon, Unique unit, Heavy siege weapon."
+1021022 "Train <b>Repeater Crossbow Chariot<b> (<cost>, 28 <MATERIAL=MPIconGoodCPU>)\nHan unique siege weapon. Fires bolts that deal pass-through damage.\nUpgrades: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT101SiegeEngineers>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Armor classes: Cavalry, Siege weapon, Unique unit, Heavy siege weapon."
 
 1021023 "Train <b>Elite Repeater Crossbow Chariot<b> (<cost>, 28 <MATERIAL=MPIconGoodCPU>)\nHan unique siege weapon. Fires bolts that deal pass-through damage.\nUpgrades: <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege weapon; Armor classes: Cavalry, Siege weapon, Unique unit, Heavy siege weapon."
 
@@ -196,7 +196,7 @@
 
 
 
-2000001 "Elite Chariot"
+2000001 "Elite War Chariot"
 2000002 "Elite Chariot Archer"
 2000003 "Elite Qi Jiji"
 2000004 "Elite Qin Ruishi"
@@ -219,7 +219,7 @@
 
 
 
-2001001 "Upgrade to Elite Chariot"
+2001001 "Upgrade to Elite War Chariot"
 2001002 "Upgrade to Elite Chariot Archer"
 2001003 "Upgrade to Elite Qi Jiji"
 2001004 "Upgrade to Elite Qin Ruishi"
@@ -242,14 +242,14 @@
 
 
 
-2021001 "Upgrade to <b>Elite Chariot<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Chariots to create more powerful Elite Chariots."
+2021001 "Upgrade to <b>Elite War Chariot<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your War Chariots to create more powerful Elite War Chariots."
 2021002 "Upgrade to <b>Elite Chariot Archer<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Chariot Archers to create more powerful Elite Chariot Archers."
 2021003 "Upgrade to <b>Elite Qi Jiji<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Qi Jiji to create more powerful Elite Qi Jiji."
 2021004 "Upgrade to <b>Elite Qin Ruishi<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Qin Ruishi to create more powerful Elite Qin Ruishi."
 2021005 "Upgrade to <b>Elite Qin Chouqi<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Qin Chouqi to create more powerful Elite Qin Chouqi."
 2021006 "Upgrade to <b>Elite Qin Crossbow<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Qin Crossbows to create more powerful Elite Qin Crossbows."
 2021007 "Upgrade to <b>Elite Han Crossbowman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Han Crossbowmen to create more powerful Elite Han Crossbowmen."
-2021008 "Upgrade to <b>Elite Repeater Crossbow Chariot<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Repeater Crossbow Chariots to create more powerful Elite Repeater Crossbow Chariots."
+2021008 "Upgrade to <b>Elite Repeater Crossbow Chariot<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Repeater Crossbow War Chariots to create more powerful Elite Repeater Crossbow War Chariots."
 2021009 "Upgrade to <b>Elite Wei Wuzu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Wei Wuzu to create more powerful Elite Wei Wuzu."
 2021010 "Upgrade to <b>Veteran Heavy Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Heavy Crossbowmen to create more powerful Veteran Heavy Crossbowmen."
 2021011 "Upgrade to <b>Elite Heavy Crossbowman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade your Veteran Heavy Crossbowmen to create more powerful Elite Heavy Crossbowmen."
@@ -268,7 +268,7 @@
 3000001 "Fish and Salt"
 3000002 "Industry and Commerce"
 3000003 "Jixia Academy"
-3000004 "State of a Thousand Chariots"
+3000004 "State of a Thousand War Chariots"
 3000005 "Sun Bin's Art of War"
 3000006 "Qi Army Readiness"
 3000007 "Bow and Crossbow Crafting"
@@ -313,9 +313,9 @@
 3001001 "Fish and Salt (Fishermen and Fishing Ships +15% gather rate)"
 3001002 "Industry and Commerce (Receive 200 wood immediately and research Caravan)"
 3001003 "Jixia Academy (University technologies -33% research cost)"
-3001004 "State of a Thousand Chariots (Chariots -20% training cost)"
+3001004 "State of a Thousand War Chariots (War Chariots -20% training cost)"
 3001005 "Sun Bin's Art of War (Qi Jiji +2 attack, +10% movement speed)"
-3001006 "Qi Army Readiness (Receive 5 Archer-line, Militia-line and Scout Cavalry-line units immediately)"
+3001006 "Qi Army Readiness (Receive 6 Archer-line, Militia-line and Scout Cavalry-line units immediately)"
 3001007 "Bow and Crossbow Crafting (Archer-line units +10% attack speed, +5% more per age up)"
 3001008 "Weapon Standardization (Each Blacksmith technology makes military units -1 wood and gold cost)"
 3001009 "Military Merit Rewards (Qin Ruishi +15 hit points, +33% production speed)"
@@ -328,10 +328,10 @@
 3001016 "Pass Defense (Receive 300 stone; unlocks Fortified Camp)"
 3001017 "Land of Four Fronts (Buildings regenerate 600 hit points per minute, -25% bonus damage taken)"
 3001018 "Elite Han Zu (Receive 5 Han Zu immediately and every 2 minutes)"
-3001019 "Exhausting the Land's Potential (Farms -40% construction cost)"
-3001020 "Elite Selection (Infantry and archers +33% attack bonus)"
+3001019 "Exhausting the Land's Potential (Farms -33% construction cost)"
+3001020 "Elite Selection (Infantry and archers +40% attack bonus)"
 3001021 "Wuzu System (Wei Wuzu can be trained at the Barracks)"
-3001022 "Price Stabilization (Receive 75 food per minute)"
+3001022 "Price Stabilization (Receive 66 food per minute)"
 3001023 "Lord Xinling's Retainers (Lord Xinling can spend gold to summon Retainers)"
 3001024 "Daliang City Defense (Castles, walls and gates +40% hit points)"
 3001025 "Hu Clothing Decree (Stable technologies -40% research cost)"
@@ -344,12 +344,12 @@
 3001032 "Yunmeng Marsh (War ships +10% hit points)"
 3001033 "Shamanism (Receive 3 Monks immediately; Monks +40% hit points and healing speed)"
 3001034 "Vertical Alliance (Team Castles +33% work rate)"
-3001035 "Chariotry (Chariots +10% movement speed; nearby infantry +15% movement speed)"
+3001035 "Chariotry (War Chariots +10% movement speed; nearby infantry +15% movement speed)"
 3001036 "Rhinoceros Armor (Shenxi Army +30 hit points)"
 3001037 "Frontier Fortification (Buildings -20% stone cost)"
 3001038 "Hu Cavalry (Scout Cavalry-line upgrades free, +1 pierce armor)"
 3001039 "Abdication (Advancing to Age 4 -40% cost)"
-3001040 "Edict of Recruitment (Villagers and Monks +75% production speed)"
+3001040 "Edict of Recruitment (Villagers and Monks +40% production speed)"
 3001041 "Golden Terrace (All technologies research in 10 seconds)"
 3001042 "Liaodong Commandery (Castles and towers +33% attack speed)"
 
@@ -358,9 +358,9 @@
 3021001 "Fish and Salt (Fishermen and Fishing Ships +15% gather rate)"
 3021002 "Industry and Commerce (Receive 200 wood immediately and research Caravan)"
 3021003 "Jixia Academy (University technologies -33% research cost)"
-3021004 "State of a Thousand Chariots (Chariots -20% training cost)"
+3021004 "State of a Thousand War Chariots (War Chariots -20% training cost)"
 3021005 "Sun Bin's Art of War (Qi Jiji +2 attack, +10% movement speed)"
-3021006 "Qi Army Readiness (Receive 5 Archer-line, Militia-line and Scout Cavalry-line units immediately)"
+3021006 "Qi Army Readiness (Receive 6 Archer-line, Militia-line and Scout Cavalry-line units immediately)"
 3021007 "Bow and Crossbow Crafting (Archer-line units +10% attack speed, +5% more per age up)"
 3021008 "Weapon Standardization (Each Blacksmith technology makes military units -1 wood and gold cost)"
 3021009 "Military Merit Rewards (Qin Ruishi +15 hit points, +33% production speed)"
@@ -373,10 +373,10 @@
 3021016 "Pass Defense (Receive 300 stone; unlocks Fortified Camp)"
 3021017 "Land of Four Fronts (Buildings regenerate 600 hit points per minute, -25% bonus damage taken)"
 3021018 "Elite Han Zu (Receive 5 Han Zu immediately and every 2 minutes)"
-3021019 "Exhausting the Land's Potential (Farms -40% construction cost)"
-3021020 "Elite Selection (Infantry and archers +33% attack bonus)"
+3021019 "Exhausting the Land's Potential (Farms -33% construction cost)"
+3021020 "Elite Selection (Infantry and archers +40% attack bonus)"
 3021021 "Wuzu System (Wei Wuzu can be trained at the Barracks)"
-3021022 "Price Stabilization (Receive 75 food per minute)"
+3021022 "Price Stabilization (Receive 66 food per minute)"
 3021023 "Lord Xinling's Retainers (Lord Xinling can spend gold to summon Retainers)"
 3021024 "Daliang City Defense (Castles, walls and gates +40% hit points)"
 3021025 "Hu Clothing Decree (Stable technologies -40% research cost)"
@@ -389,12 +389,12 @@
 3021032 "Yunmeng Marsh (War ships +10% hit points)"
 3021033 "Shamanism (Receive 3 Monks immediately; Monks +40% hit points and healing speed)"
 3021034 "Vertical Alliance (Team Castles +33% work rate)"
-3021035 "Chariotry (Chariots +10% movement speed; nearby infantry +15% movement speed)"
+3021035 "Chariotry (War Chariots +10% movement speed; nearby infantry +15% movement speed)"
 3021036 "Rhinoceros Armor (Shenxi Army +30 hit points)"
 3021037 "Frontier Fortification (Buildings -20% stone cost)"
 3021038 "Hu Cavalry (Scout Cavalry-line upgrades free, +1 pierce armor)"
 3021039 "Abdication (Advancing to Age 4 -40% cost)"
-3021040 "Edict of Recruitment (Villagers and Monks +75% production speed)"
+3021040 "Edict of Recruitment (Villagers and Monks +40% production speed)"
 3021041 "Golden Terrace (All technologies research in 10 seconds)"
 3021042 "Liaodong Commandery (Castles and towers +33% attack speed)"
 
@@ -418,7 +418,7 @@
 
 
 4001001 "Research Naval Supremacy (War ships +1 range)"
-4001002 "Research Guan Zhong's Reforms (Trade units generate +33% additional food)"
+4001002 "Research Guan Zhong's Reforms (Trade units generate +20% additional food)"
 4001003 "Research Land Reclamation Order (Villagers +10% work rate)"
 4001004 "Research First Emperor (All units +10 hit points)"
 4001005 "Research Mighty Crossbows of the Realm (Archer-line units and Han Crossbowmen +2 range)"
@@ -435,7 +435,7 @@
 
 
 4021001 "Research <b>Naval Supremacy<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nWar ships +1 range."
-4021002 "Research <b>Guan Zhong's Reforms<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nTrade units generate +33% additional food."
+4021002 "Research <b>Guan Zhong's Reforms<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nTrade units generate +20% additional food."
 4021003 "Research <b>Land Reclamation Order<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nVillagers +10% work rate."
 4021004 "Research <b>First Emperor<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nAll units +10 hit points."
 4021005 "Research <b>Mighty Crossbows of the Realm<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nArcher-line units and Han Crossbowmen +2 range."
@@ -461,19 +461,19 @@
 
 
 
-4600001 "Trade  Navy  Chariots\n\n• War ships -30% wood cost\n• Chariots and Chariot Archers +2 armor\nAge 2:\n  Fish and Salt - Fishermen and Fishing Ships +15% gather rate\n  Industry and Commerce - Receive 200 wood immediately and research Caravan\nAge 3:\n  Jixia Academy - University technologies -33% research cost\n  State of a Thousand Chariots - Chariots -20% training cost\nAge 4:\n  Sun Bin's Art of War - Qi Jiji +2 attack, +10% movement speed\n  Qi Army Readiness - Receive 5 Archer-line, Militia-line and Scout Cavalry-line units immediately\n\n<b>Unique Units:<b>\nQi Jiji (light infantry, fast-moving), Fire Ox (self-destruct unit that reduces enemy armor)\n\n<b>Unique Technologies:<b>\n• Naval Supremacy (all war ships +1 range)\n• Guan Zhong's Reforms (trade units generate +33% additional food)\n\n<b>Team Bonus:<b>\n• Trade units +25% gold generation"
+4600001 "Trade  Navy  War Chariots\n\n• War ships -30% wood cost\n• War Chariots and Chariot Archers +2 armor\nAge 2:\n  Fish and Salt - Fishermen and Fishing Ships +15% gather rate\n  Industry and Commerce - Receive 200 wood immediately and research Caravan\nAge 3:\n  Jixia Academy - University technologies -33% research cost\n  State of a Thousand War Chariots - War Chariots -20% training cost\nAge 4:\n  Sun Bin's Art of War - Qi Jiji +2 attack, +10% movement speed\n  Qi Army Readiness - Receive 6 Archer-line, Militia-line and Scout Cavalry-line units immediately\n\n<b>Unique Units:<b>\nQi Jiji (light infantry, fast-moving), Fire Ox (self-destruct unit that reduces enemy armor)\n\n<b>Unique Technologies:<b>\n• Naval Supremacy (all war ships +1 range)\n• Guan Zhong's Reforms (trade units generate +20% additional food)\n\n<b>Team Bonus:<b>\n• Trade units +25% gold generation"
 
 4600002 "Infantry  Crossbows  Conscription\n\n• Villagers +15 hit points per age advanced\n• Infantry -15% training cost\nAge 2:\n  Bow and Crossbow Crafting - Archer-line units +10% attack speed, +5% more per age up\n  Weapon Standardization - Each Blacksmith technology makes military units -1 wood and gold cost\nAge 3:\n  Military Merit Rewards - Qin Ruishi +15 hit points, +33% production speed\n  Reform - Technologies -15% research cost\nAge 4:\n  Suanfu Tax - Each unit generates +1.5 additional gold per minute\n  Conscription - Gain 15 population space; can build Conscription Offices to mass-produce troops\n\n<b>Unique Units:<b>\nQin Ruishi (heavy infantry; gains hit points and attack after killing military units), Qin Chouqi (medium cavalry, strong vs. archers), Qin Crossbow (cheaper, faster-firing scorpion)\n\n<b>Unique Technologies:<b>\n• Land Reclamation Order (Villagers +10% work rate)\n• First Emperor (all units +10 hit points)\n\n<b>Team Bonus:<b>\n• Military units +15% training speed"
 
 4600003 "Crossbows  Metallurgy  Defense\n\n• Blacksmith technologies -33% cost\n• Villagers deplete mines -20% slower\nAge 2:\n  Iron Smelting Center - Receive all Age 2 Blacksmith technologies immediately\n  Statecraft of Shu - Economic technologies -33% cost and research instantly\nAge 3:\n  Master Craftsmen - Unlocks Trebuchets, but -33% attack speed in the Castle Age\n  Pass Defense - Receive 300 stone; unlocks Fortified Camp\nAge 4:\n  Land of Four Fronts - Buildings regenerate 600 hit points per minute, -25% bonus damage taken\n  Elite Han Zu - Receive 5 Han Zu immediately and every 2 minutes\n\n<b>Unique Units:<b>\nHan Crossbowman (foot archer with exceptionally long range), Repeater Crossbow Chariot (siege weapon firing pass-through bolts), Fortified Camp (defensive building), Han Zu (elite heavy infantry)\n\n<b>Unique Technologies:<b>\n• Mighty Crossbows of the Realm (Archer-line units and Han Crossbowmen +2 range)\n• Shen Buhai's Reforms (economic units take up -10% population space)\n\n<b>Team Bonus:<b>\n• Archery Range +15% work rate"
 
-4600004 "Infantry  Heavy Armor  Agriculture\n\n• Age advancement -15% cost\n• Farm technology yield bonuses doubled\nAge 2:\n  Exhausting the Land's Potential - Farms -40% construction cost\n  Elite Selection - Infantry and archers +33% attack bonus\nAge 3:\n  Wuzu System - Wei Wuzu can be trained at the Barracks\n  Price Stabilization - Receive 75 food per minute\nAge 4:\n  Lord Xinling's Retainers - Lord Xinling can spend gold to summon Retainers\n  Daliang City Defense - Castles, walls and gates +40% hit points\n\n<b>Unique Units:<b>\nWei Wuzu (heavy infantry with very high armor), Heavy Crossbowman (foot archer with high armor), Cangtou Jun (light infantry replacing Spearmen), Lord Xinling (hero mounted archer with an attack speed aura), Retainer (elite infantry taking up no population space)\n\n<b>Unique Technologies:<b>\n• Tiger Tally (each Town Center, up to 5, immediately produces 5 Wei Wuzu)\n• Mutual Kingship (you and your allies receive 8 gold per military unit)\n\n<b>Team Bonus:<b>\n• Infantry +1 armor from the Castle Age"
+4600004 "Infantry  Heavy Armor  Agriculture\n\n• Age advancement -15% cost\n• Farm technology yield bonuses doubled\nAge 2:\n  Exhausting the Land's Potential - Farms -33% construction cost\n  Elite Selection - Infantry and archers +40% attack bonus\nAge 3:\n  Wuzu System - Wei Wuzu can be trained at the Barracks\n  Price Stabilization - Receive 66 food per minute\nAge 4:\n  Lord Xinling's Retainers - Lord Xinling can spend gold to summon Retainers\n  Daliang City Defense - Castles, walls and gates +40% hit points\n\n<b>Unique Units:<b>\nWei Wuzu (heavy infantry with very high armor), Heavy Crossbowman (foot archer with high armor), Cangtou Jun (light infantry replacing Spearmen), Lord Xinling (hero mounted archer with an attack speed aura), Retainer (elite infantry taking up no population space)\n\n<b>Unique Technologies:<b>\n• Tiger Tally (each Town Center, up to 5, immediately produces 5 Wei Wuzu)\n• Mutual Kingship (you and your allies receive 8 gold per military unit)\n\n<b>Team Bonus:<b>\n• Infantry +1 armor from the Castle Age"
 
 4600005 "Cavalry  Mounted Archers  Defense\n\n• Shepherds deplete herds -40% slower\n• Mounted archers +25% attack speed\nAge 2:\n  Hu Clothing Decree - Stable technologies -40% research cost\n  Animal Husbandry - Receive 6 Sheep\nAge 3:\n  Fine Horses of Dai - Cavalry units +10% movement speed\n  Mounted Archery Training - Mounted archers +1 armor/+2 pierce armor\nAge 4:\n  Dare-to-Die Corps - Militia line +4 attack; upgraded to Two-Handed Swordsmen immediately\n  Shock Cavalry - Scout Cavalry-line attacks deal 50% trample damage in 0.5 tiles\n\n<b>Unique Units:<b>\nZhao Border Cavalry (mounted archer, strong vs. archers), Hufu Halberdier (light infantry with faster speed/attack and higher pierce armor), Zhao Feiqi (extremely fast light cavalry)\n\n<b>Unique Technologies:<b>\n• Jinyang Stronghold (towers and Castles +2 range)\n• Frontier Army (cavalry and mounted archers -10% training cost, +100% training speed)\n\n<b>Team Bonus:<b>\n• Stable +20% work rate"
 
-4600006 "Infantry  Chariots  Navy\n\n• Villagers chop wood +15% faster\n• Chariots +20% attack speed\nAge 2:\n  Shaobei Dam - Farms +125 food\n  Yunmeng Marsh - War ships +10% hit points\nAge 3:\n  Shamanism - Receive 3 Monks immediately; Monks +40% hit points and healing speed\n  Vertical Alliance - Team Castles +33% work rate\nAge 4:\n  Chariotry - Chariots +10% movement speed; nearby infantry +15% movement speed\n  Rhinoceros Armor - Shenxi Army +30 hit points\n\n<b>Unique Units:<b>\nShenxi Army (heavy melee infantry, strong vs. cavalry), Repeater Crossbowman (foot archer firing 3 bolts at once)\n\n<b>Unique Technologies:<b>\n• Fang Cheng (arrows fired by buildings deal pass-through damage)\n• Tai'e Sword (infantry +4 attack)\n\n<b>Team Bonus:<b>\n• Dock -25% wood cost"
+4600006 "Infantry  War Chariots  Navy\n\n• Villagers chop wood +15% faster\n• War Chariots +20% attack speed\nAge 2:\n  Shaobei Dam - Farms +125 food\n  Yunmeng Marsh - War ships +10% hit points\nAge 3:\n  Shamanism - Receive 3 Monks immediately; Monks +40% hit points and healing speed\n  Vertical Alliance - Team Castles +33% work rate\nAge 4:\n  Chariotry - War Chariots +10% movement speed; nearby infantry +15% movement speed\n  Rhinoceros Armor - Shenxi Army +30 hit points\n\n<b>Unique Units:<b>\nShenxi Army (heavy melee infantry, strong vs. cavalry), Repeater Crossbowman (foot archer firing 3 bolts at once)\n\n<b>Unique Technologies:<b>\n• Fang Cheng (arrows fired by buildings deal pass-through damage)\n• Tai'e Sword (infantry +4 attack)\n\n<b>Team Bonus:<b>\n• Dock -25% wood cost"
 
-4600007 "Infantry  Cavalry  Defense\n\n• Villagers hunt +33% faster\n• Barracks technologies -50% cost\nAge 2:\n  Frontier Fortification - Buildings -20% stone cost\n  Hu Cavalry - Scout Cavalry-line upgrades free, +1 pierce armor\nAge 3:\n  Abdication - Advancing to Age 4 -40% cost\n  Edict of Recruitment - Villagers and Monks +75% production speed\nAge 4:\n  Golden Terrace - All technologies research in 10 seconds\n  Liaodong Commandery - Castles and towers +33% attack speed\n\n<b>Unique Units:<b>\nLiaodong Cavalry (cost-effective medium cavalry), Assassin (one-time-use light unit; damages buildings and reduces target work rate)\n\n<b>Unique Technologies:<b>\n• Spirit of the Dare-to-Die (infantry gain +1 attack per 10% hit points lost)\n• Fury of the Northern Frontier (Liaodong Cavalry's gold cost replaced by food cost)\n\n<b>Team Bonus:<b>\n• Walls and gates -50% construction cost and time"
+4600007 "Infantry  Cavalry  Defense\n\n• Villagers hunt +33% faster\n• Barracks technologies -50% cost\nAge 2:\n  Frontier Fortification - Buildings -20% stone cost\n  Hu Cavalry - Scout Cavalry-line upgrades free, +1 pierce armor\nAge 3:\n  Abdication - Advancing to Age 4 -40% cost\n  Edict of Recruitment - Villagers and Monks +40% production speed\nAge 4:\n  Golden Terrace - All technologies research in 10 seconds\n  Liaodong Commandery - Castles and towers +33% attack speed\n\n<b>Unique Units:<b>\nLiaodong Cavalry (cost-effective medium cavalry), Assassin (one-time-use light unit; damages buildings and reduces target work rate)\n\n<b>Unique Technologies:<b>\n• Spirit of the Dare-to-Die (infantry gain +1 attack per 10% hit points lost)\n• Fury of the Northern Frontier (Liaodong Cavalry's gold cost replaced by food cost)\n\n<b>Team Bonus:<b>\n• Walls and gates -50% construction cost and time"
 
 
 
