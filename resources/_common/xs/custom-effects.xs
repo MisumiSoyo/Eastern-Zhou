@@ -1,7 +1,7 @@
 include "array.xs";
 include "math.xs";
 include "tech-adjustment.xs";
-include "techtree.xs";
+include "ability.xs";
 include "timer.xs";
 
 
@@ -88,11 +88,19 @@ void EffectFunction10010(int playerId = -1)
 }
 
 
+//  10015 - C-Bonus, no dropsite lumberjacks
+void EffectFunction10015(int playerId = -1)
+{
+    NoDropsiteLumberjackApplier(playerId, MaleLumberjackID);
+    NoDropsiteLumberjackApplier(playerId, FemaleLumberjackID);
+}
+
+
 
 void main()
 {
-    xsChatData("Mod: Eastern Zhou States");
-    xsChatData("Patch: 1.0b  2026.10.02");
+    xsChatData("Mod: Eastern Zhou");
+    xsChatData("Patch: 1.1  2026.10.03");
     xsChatData("Author: Misumi Soyo");
 
     vector pos = xsVectorSet(0.0, 0.0, 0.0);

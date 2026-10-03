@@ -201,6 +201,60 @@
             "unique_unit_line": -378,
             "name_string_id": 4500007,
             "tech_tree_description_string_id": 4600007
+        },
+        {
+            "note": "吴国(替换VIKINGS)文明页面独特单位: 江东射手 (吴越勇士与戈船为吴越地区单位, 不列入)",
+            "action": "modify",
+            "civ_id": "VIKINGS",
+            "internal_name": "EzsWu",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_wu.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000053, "description": 1021053}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/436_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500700,
+            "unique_tech_id_1": 3158,
+            "unique_tech_id_2": 3159,
+            "unique_unit_id": 4057,
+            "elite_unique_unit_id": 4058,
+            "unique_unit_upgrade_id": 3153,
+            "unique_unit_line": -375,
+            "name_string_id": 4500008,
+            "tech_tree_description_string_id": 4600008
+        },
+        {
+            "note": "越国(替换MALAY)独特单位的文本ID与科技树头像: 君子军, 越国死士, 越国步弓手",
+            "action": "modify",
+            "civ_id": "MALAY",
+            "internal_name": "EzsYue",
+            "hud_style": "CivAsia",
+            "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_yue.png",
+            "unique_unit_string_ids":
+            [
+                {"name": 1000060, "description": 1021060},
+                {"name": 1000062, "description": 1021062},
+                {"name": 1000057, "description": 1021057}
+            ],
+            "unique_unit_image_paths":
+            [
+                "/resources/uniticons/038_50730.png",
+                "/resources/uniticons/113_50730.png",
+                "/resources/uniticons/017_50730.png"
+            ],
+            "computer_name_string_table_offset": 3500800,
+            "unique_tech_id_1": 3175,
+            "unique_tech_id_2": 3176,
+            "unique_unit_id": 4063,
+            "elite_unique_unit_id": 4064,
+            "unique_unit_upgrade_id": 3173,
+            "unique_unit_line": -373,
+            "name_string_id": 4500009,
+            "tech_tree_description_string_id": 4600009
         }
     ]
 }

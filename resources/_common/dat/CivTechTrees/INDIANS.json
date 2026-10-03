@@ -823,6 +823,20 @@
             "Picture Index": 118
         },
         {
+            "Name": "Gambesons",
+            "Node Type": "Research",
+            "Link Node Type": "Research",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable",
+            "Name String ID": 17450,
+            "Age ID": 3,
+            "Building ID": 12,
+            "Help String ID": 107450,
+            "Node ID": 875,
+            "Picture Index": 116
+        },
+        {
             "Name": "Squires",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",
@@ -2787,7 +2801,7 @@
             "Link Node Type": "Research",
             "Draw Node Type": "UnitTech",
             "Use Type": "Tech",
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Name String ID": 17012,
             "Age ID": 4,
             "Building ID": 68,

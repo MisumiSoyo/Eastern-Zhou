@@ -40,6 +40,8 @@ CIVS = {
     "赵": ("zhao", "mongols", "ezszhao"),
     "楚": ("chu", "goths", "ezschu"),
     "燕": ("yan", "japanese", "ezsyan"),
+    "吴": ("wu", "vikings", "ezswu"),
+    "越": ("yue", "malay", "ezsyue"),
 }
 
 MAGIC = (255, 0, 255)  # 泛洪填充用的背景标记色 (勋章图中不存在品红)

@@ -22,12 +22,6 @@
     "effect_adjustments":
     [
         {
-            "type": "adjustment",
-            "name": "禁用EZS新增的区域单位",
-            "effect_id": 79,
-            "function_id": 10002
-        },
-        {
             "type": "delete",
             "name": "齐国移除原有科技树",
             "effect_id": 986,
@@ -134,6 +128,43 @@
             "name": "帕提亚战术调整",
             "effect_id": 452,
             "function_id": 10014
+        },
+        {
+            "type": "replace",
+            "name": "吴国团队加成",
+            "effect_id": 411,
+            "commands": [[4, 45, -1, 1, 5],
+                         [4, 47, -1, 1, 5],
+                         [4, 51, -1, 1, 5],
+                         [4, 133, -1, 1, 5]]
+        },
+        {
+            "type": "replace",
+            "name": "越国团队加成",
+            "effect_id": 649,
+            "commands": [[4, 70, -1, 21, 5],
+                         [4, 191, -1, 21, 5],
+                         [4, 192, -1, 21, 5],
+                         [4, 463, -1, 21, 5],
+                         [4, 464, -1, 21, 5],
+                         [4, 465, -1, 21, 5],
+                         [4, 712, -1, 21, 5],
+                         [4, 713, -1, 21, 5],
+                         [4, 714, -1, 21, 5],
+                         [4, 715, -1, 21, 5],
+                         [4, 716, -1, 21, 5],
+                         [4, 717, -1, 21, 5],
+                         [4, 718, -1, 21, 5],
+                         [4, 719, -1, 21, 5],
+                         [4, 2556, -1, 21, 5],
+                         [4, 2558, -1, 21, 5],
+                         [4, 2560, -1, 21, 5],
+                         [5, 70, -1, 101, 0.5],
+                         [5, 191, -1, 101, 0.5],
+                         [5, 192, -1, 101, 0.5],
+                         [5, 463, -1, 101, 0.5],
+                         [5, 464, -1, 101, 0.5],
+                         [5, 465, -1, 101, 0.5]]
         }
     ],
     "unit_copies":
@@ -142,7 +173,7 @@
             "note": "模组文明改为东亚建筑风格",
             "source_civ": 6,
             "unit_id": "all",
-            "civs": [4, 3],
+            "civs": [4, 3, 11, 29],
             "search": {"field": "class_", "op": "in", "value": [3, 27, 39, 49, 52]},
             "attributes": ["standing_graphic",
                            "dying_graphic",
@@ -172,27 +203,14 @@
             "attributes": [["hit_points", 50]]
         },
         {
-            "note": "长剑士护甲和生命值提升",
+            "note": "长剑士攻击力, 护甲和生命值提升",
             "unit_id": [77],
             "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
                            ["type_50.displayed_melee_armour", 2],
-                           ["hit_points", 65]]
-        },
-        {
-            "note": "精锐剑士护甲提升, 生命值提升",
-            "unit_id": [473],
-            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
-                           ["type_50.displayed_melee_armour", 2],
-                           ["hit_points", 70]]
-        },
-        {
-            "note": "冠军剑士护甲提升, 生命值提升",
-            "unit_id": [567],
-            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
-                           ["type_50.displayed_melee_armour", 2],
-                           ["type_50.armours", "list_search", ["class_", 3], ["amount", 3]],
-                           ["creatable.displayed_pierce_armour", 3],
-                           ["hit_points", 75]]
+                           ["hit_points", 70],
+                           ["type_50.attacks", "list_search", ["class_", 4], ["amount", 10]],
+                           ["type_50.displayed_attack", 10],
+                           ["type_50.attacks", "list_search", ["class_", 21], ["amount", 5]]]
         },
         {
             "note": "磨坊, 伐木场, 采矿场建造价格减少",
@@ -257,9 +275,9 @@
         {
             "note": "移除各文明原有文明加成",
             "tech_id": "all",
-            "search": [["civ", "in", [52, 6, 18, 4, 12, 3, 5]],
+            "search": [["civ", "in", [52, 6, 18, 4, 12, 3, 5, 11, 29]],
                        ["id", "<=", 3000],
-                       ["id", "not in", [986, 534, 546, 532, 540, 531, 533]]],
+                       ["id", "not in", [986, 534, 546, 532, 540, 531, 533, 539, 651]]],
             "attributes": [["civ", "add", 100]]
         }
     ],
@@ -267,16 +285,16 @@
     [
         {
             "note": "文明语言设置为汉语",
-            "civs": [18, 4, 12, 3, 5],
+            "civs": [18, 4, 12, 3, 5, 11, 29],
             "resource_id": 18,
             "num": 6
         },
         {
-            "note": "资源805: 各模组文明可选科技起始ID (楚/魏/燕/秦/赵/韩/齐)",
-            "civs": [3, 4, 5, 6, 12, 18, 52],
+            "note": "资源805: 各模组文明可选科技起始ID (楚/魏/燕/秦/赵/韩/齐/吴/越)",
+            "civs": [3, 4, 5, 6, 12, 18, 52, 11, 29],
             "resource_id": 805,
             "op": "set",
-            "num": [3113, 3080, 3128, 3028, 3099, 3062, 3012]
+            "num": [3113, 3080, 3128, 3028, 3099, 3062, 3012, 3141, 3161]
         }
     ]
 }

@@ -40,16 +40,21 @@ FAU 同步采用"增量记录"模型: 只增删改动波及的条目, 不做全�
 以保持与官方 FAU 既有约定 (如升时代科技不列入、基础建筑不挂 Builder 等) 一致。
 
 第三产出 unitlines.json (AI 兵种线):
-add/replace 单位节点可带 "UnitLine": <负数 LineID> 声明该单位所属兵种线。
+add/replace 单位节点可带 "UnitLine": <负数 LineID> 声明该单位所属兵种线;
+不带该字段的节点不挂任何兵种线。
 同一 LineID 的节点按在本文件中的出现顺序组成 IDChain (基础单位天然写在更靠前),
 同一 Node ID 跨文明重复出现时自动去重 (如魏武卒出现在两个文明的条目中);
 add 取 Node ID, replace 取 new_node_id (即模组新单位 ID)。
-Name 取链上第一个节点的 Name, 输出为 "EZS <Name> Line";
-Identifier 由 Name 派生为 "ezs-<slug>-line"。
+两种归属:
+- 引用官方既有线 (LineID 已存在于官方 unitlines.json): 把新成员并入该线的
+  IDChain 输出, 不新增条目, Name/Identifier/Building 沿用官方定义;
+  "UnitLineBuilding" 必须与官方线的 Building 标记一致。
+- EZS 新线 (LineID 不在官方文件中): Name 取链上第一个节点的 Name,
+  输出为 "EZS <Name> Line"; Identifier 由 Name 派生为 "ezs-<slug>-line"。
 建筑线 (整链都是 UniqueBuilding 等) 才加 "UnitLineBuilding": true。
-LineID 必须严格位于 (-400, -199) 且不得与官方 unitlines.json 既有线冲突;
-EZS 固定从 -397 向下分配。
-只有一个成员的链 (如火牛、韩卒) 在输出阶段过滤, 不写入 unitlines.json;
+LineID 必须严格位于 (-400, -199);
+引用官方线用其既有 LineID, EZS 新线从 -397 起避开官方 ID。
+只有一个成员的 EZS 新链 (如火牛、韩卒) 在输出阶段过滤, 不写入 unitlines.json;
 标注保留在 ctt_changes.json 中, 将来若追加精锐变体将自动成链。
 """
 
@@ -397,6 +402,40 @@ def use_type_matches(item, use_type):
 
 
 # ---------------------------------------------------------------- CTT 操作
+
+def resolve_civ_ids(raw, civ_groups, known_civ_ids, note=""):
+    """把一条 change 的 civ_id 展开成具体文明 ID 列表 (保序去重)。
+
+    支持的写法:
+      "FRANKS"                 单个具体文明 ID
+      "all"                    全部文明 (延迟到应用阶段处理)
+      ["JURCHENS", "VIKINGS"]  显式列表
+      "模组文明"                引用文件顶层 civ_groups 中定义的组
+    列表元素可混用组名与具体 ID; 组定义中也允许嵌套引用其他组 (循环引用报错)。
+    未知名 (非 all、非组名、非官方文明 ID) 只警告不中断, 避免拼错组名时静默落空。
+    """
+    items = raw if isinstance(raw, list) else [raw]
+    resolved = []
+    seen = set()
+
+    def add(value, stack):
+        if isinstance(value, str) and value in civ_groups:
+            if value in stack:
+                raise ValueError(f"civ_groups 存在循环引用: {' -> '.join(stack + [value])}")
+            for member in civ_groups[value]:
+                add(member, stack + [value])
+            return
+        if value != "all" and value not in known_civ_ids:
+            print(f"  Warning: civ_id '{value}' 不是已知文明或 civ_groups 组名, "
+                  f"按具体 ID 透传 (note: {note})")
+        if value not in seen:
+            seen.add(value)
+            resolved.append(value)
+
+    for value in items:
+        add(value, [])
+    return resolved
+
 
 def apply_template(change, civs_data, civ_files, states, fau_data, pool, regional_ids, internal_name_map):
     """template: 以模板文明科技树覆盖目标文明"""
@@ -984,18 +1023,27 @@ def line_slug(name):
     return "ezs-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-") + "-line"
 
 
-def collect_unit_lines(changes_list):
-    """从 add/replace 单位条目的 "UnitLine" 字段收集 EZS 兵种线。
+def collect_unit_lines(changes_list, official_lines=None):
+    """从 add/replace 单位条目的 "UnitLine" 字段收集兵种线归属。
 
-    返回按 LineID 首次出现顺序排列的 unitlines 条目列表。
+    返回 (ezs_lines, official_merges):
+    - ezs_lines: LineID 不属于官方文件的新线条目 (按首次出现顺序);
+    - official_merges: {官方 LineID: [新增 Node ID ...]}, 输出时并入官方既有线。
+
+    规则:
     - 同一 LineID 的节点按文件出现顺序组成 IDChain (基础单位写在更靠前);
     - 同一单位 ID 跨文明/重复条目自动去重 (如魏武卒在两个文明条目中出现);
-    - 同一单位不允许属于两条不同的线;
-    - 链名取首个成员的 Name, 允许后续成员带 Elite/Veteran 前缀。
+    - 同一单位不允许属于两条不同的线 (官方线成员同样参与冲突检测);
+    - 引用官方线时 "UnitLineBuilding" 必须与该官方线的 Building 标记一致;
+    - EZS 新线的链名取首个成员的 Name, 允许后续成员带 Elite/Veteran 前缀。
     """
-    chains = {}        # line_id -> {"name", "building", "ids"}
+    official_lines = official_lines or {}
+    chains = {}        # line_id -> {"name", "building", "ids", "official"}
     ordered = []       # line_id 首次出现顺序
-    unit_owner = {}    # unit_id -> line_id
+    unit_owner = {}    # unit_id -> line_id (含官方线成员)
+    for line in official_lines.values():
+        for uid in line["IDChain"]:
+            unit_owner[uid] = line["LineID"]
     lo, hi = UNITLINE_VALID_RANGE
 
     for change in changes_list:
@@ -1017,11 +1065,31 @@ def collect_unit_lines(changes_list):
             raise ValueError(f"UnitLine 必须是 ({lo}, {hi}) 开区间内的整数: {note} -> {line_id}")
         is_building = bool(change.get("UnitLineBuilding", False))
 
+        if line_id in official_lines:
+            off = official_lines[line_id]
+            if is_building != bool(off.get("Building", False)):
+                raise ValueError(
+                    f"UnitLineBuilding 与官方线 {line_id} ({off.get('Name')}) 的 Building 标记不一致: {note}")
+            owner = unit_owner.get(unit_id)
+            if owner is not None and owner != line_id:
+                raise ValueError(f"单位 {unit_id} 已属于线 {owner}, 不能再并入官方线 {line_id}: {note}")
+            if owner is None:
+                chains.setdefault(line_id, {
+                    "name": off.get("Name", ""), "building": is_building,
+                    "ids": [], "official": True})
+                if line_id not in ordered:
+                    ordered.append(line_id)
+                chains[line_id]["ids"].append(unit_id)
+                unit_owner[unit_id] = line_id
+            # 已在该官方线中 (官方原成员或跨文明重复条目): 去重跳过
+            continue
+
         if line_id not in chains:
             if unit_id in unit_owner and unit_owner[unit_id] != line_id:
                 raise ValueError(
                     f"单位 {unit_id} 已属于线 {unit_owner[unit_id]}, 不能再分配给 {line_id}: {note}")
-            chains[line_id] = {"name": change["Name"], "building": is_building, "ids": [unit_id]}
+            chains[line_id] = {"name": change["Name"], "building": is_building,
+                               "ids": [unit_id], "official": False}
             unit_owner[unit_id] = line_id
             ordered.append(line_id)
             continue
@@ -1037,40 +1105,48 @@ def collect_unit_lines(changes_list):
             unit_owner[unit_id] = line_id
         # owner == line_id: 跨文明重复条目, 去重跳过
 
-    result = []
+    ezs_lines, official_merges = [], {}
     for line_id in ordered:
         chain = chains[line_id]
-        entry = {
+        if chain["official"]:
+            official_merges[line_id] = chain["ids"]
+            continue
+        ezs_lines.append({
             "Name": f"EZS {chain['name']} Line",
             "Identifier": line_slug(chain["name"]),
             "LineID": line_id,
             "IDChain": chain["ids"],
-        }
-        if chain["building"]:
-            entry["Building"] = True
-        result.append(entry)
-    return result
+            **({"Building": True} if chain["building"] else {}),
+        })
+    return ezs_lines, official_merges
 
 
-def save_unit_lines(ezs_lines):
-    """以官方 unitlines.json 为底追加 EZS 兵种线后输出 (每次重跑结果一致)。"""
+def save_unit_lines(ezs_lines, official_merges=None):
+    """以官方 unitlines.json 为底: 官方线并入新成员, EZS 新线整组追加
+    (每次重跑结果一致)。"""
+    official_merges = official_merges or {}
     with open(str(OFFICIAL_UNITLINES_FILE), 'r', encoding='utf-8-sig') as f:
         data = json.load(f)
-    official_ids = {line["LineID"] for line in data["UnitLines"]}
+    official_by_id = {line["LineID"]: line for line in data["UnitLines"]}
     # 官方 Identifier 可能是字符串或字符串数组 (如鹰武士线的双别名), 统一摊平
     official_idents = set()
     for line in data["UnitLines"]:
         ident = line["Identifier"]
         official_idents.update(ident if isinstance(ident, list) else [ident])
     seen_ids, seen_idents = set(), set()
+    for lid, new_ids in official_merges.items():
+        if lid not in official_by_id:
+            raise ValueError(f"官方兵种线 {lid} 不存在, 无法并入")
+        chain = official_by_id[lid]["IDChain"]
+        for uid in new_ids:
+            if uid not in chain:
+                chain.append(uid)
     for entry in ezs_lines:
         lid, ident = entry["LineID"], entry["Identifier"]
-        if lid in official_ids:
-            raise ValueError(f"LineID {lid} 与官方兵种线冲突")
+        if lid in official_by_id or lid in seen_ids:
+            raise ValueError(f"LineID 与官方兵种线冲突或重复: {lid}")
         if ident in official_idents or ident in seen_idents:
             raise ValueError(f"Identifier 冲突或重复: {ident}")
-        if lid in seen_ids:
-            raise ValueError(f"LineID 重复: {lid}")
         seen_ids.add(lid)
         seen_idents.add(ident)
         data["UnitLines"].append(entry)
@@ -1103,24 +1179,38 @@ def main():
             print(f"  FAU: {old_name} -> {new_name} (深拷贝, 保留原版)")
 
     # unitlines.json 是全局数据, 与逐文明 CTT 处理无关, 先收集并输出
-    ezs_lines = collect_unit_lines(changes["changes"])
-    # 单员链 (如火牛、韩卒) 不属于兵种升级线, 最终输出阶段过滤; 官方既有线不动
+    with open(str(OFFICIAL_UNITLINES_FILE), 'r', encoding='utf-8-sig') as f:
+        official_line_data = json.load(f)
+    official_line_map = {line["LineID"]: line for line in official_line_data["UnitLines"]}
+    ezs_lines, official_merges = collect_unit_lines(changes["changes"], official_line_map)
+    # 单员链 (如火牛、韩卒) 不属于兵种升级线, 最终输出阶段过滤; 官方既有线的并入不过滤
     multi_lines = [entry for entry in ezs_lines if len(entry["IDChain"]) >= 2]
     skipped = [entry for entry in ezs_lines if len(entry["IDChain"]) < 2]
-    save_unit_lines(multi_lines)
+    merged_desc = ", ".join(f"{lid}+{ids}" for lid, ids in sorted(official_merges.items()))
+    save_unit_lines(multi_lines, official_merges)
     for entry in skipped:
         print(f"  Note: {entry['Name']} 仅有一个成员, 已跳过不写入 unitlines.json")
     print(f"完成: unitlines.json 已生成 (EZS 新增 {len(multi_lines)} 条兵种线"
+          f"{f', 并入官方线 {len(official_merges)} 条 ({merged_desc})' if official_merges else ''}"
           f"{f', 跳过 {len(skipped)} 条单员链' if skipped else ''})")
 
     pool = build_pool(fau_data)
     regional_ids = build_regional_ids(civs_data)  # 官方数据, 须在应用 changes 前构建
+    # 顶层 civ_groups: 具名文明组, 供各 change 的 civ_id 直接引用
+    civ_groups = changes.get("civ_groups", {})
+    unknown_members = sorted({m for members in civ_groups.values() for m in members
+                              if m not in civ_files and m not in civ_groups})
+    if unknown_members:
+        print(f"  Warning: civ_groups 含未知文明/组: {unknown_members}")
     states = {}
     for change in changes["changes"]:
         if "civilizations" in change:
             apply_fau_change(change, fau_data)
-        else:
-            apply_ctt_change(change, civs_data, civ_files, states, fau_data, pool, regional_ids, internal_name_map)
+            continue
+        if "civ_id" in change:
+            change["civ_id"] = resolve_civ_ids(
+                change["civ_id"], civ_groups, set(civ_files), change.get("note", ""))
+        apply_ctt_change(change, civs_data, civ_files, states, fau_data, pool, regional_ids, internal_name_map)
 
     # 对被 CTT 改动波及的文明执行 FAU 同步
     for civ in civs_data["civs"]:

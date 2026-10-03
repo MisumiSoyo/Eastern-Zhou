@@ -56,12 +56,28 @@
         "Techs": [3128, 3129]
     },
     {
+        "note": "吴国时代2加成",
+        "action": "add",
+        "Comment": "Wu Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3141, 3142]
+    },
+    {
+        "note": "越国时代2加成",
+        "action": "add",
+        "Comment": "Yue Age 2 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3163, 3164]
+    },
+    {
         "note": "升级加成科技立即研究",
         "action": "add",
         "Comment": "Instant Upgrade Bonus",
         "Instant": true,
         "Type": null,
-        "Techs": [3012, 3013, 3014, 3015, 3016, 3017, 3028, 3029, 3030, 3031, 3032, 3033, 3062, 3063, 3064, 3065, 3066, 3067, 3080, 3081, 3082, 3083, 3084, 3085, 3099, 3100, 3101, 3102, 3103, 3104, 3113, 3114, 3115, 3116, 3117, 3118, 3128, 3129, 3130, 3131, 3132, 3133]
+        "Techs": [3012, 3013, 3014, 3015, 3016, 3017, 3028, 3029, 3030, 3031, 3032, 3033, 3062, 3063, 3064, 3065, 3066, 3067, 3080, 3081, 3082, 3083, 3084, 3085, 3099, 3100, 3101, 3102, 3103, 3104, 3113, 3114, 3115, 3116, 3117, 3118, 3128, 3129, 3130, 3131, 3132, 3133, 3141, 3142, 3143, 3144, 3145, 3146, 3163, 3164, 3165, 3166, 3167, 3168]
     },
     {
         "note": "齐国时代3加成",
@@ -120,6 +136,22 @@
         "Techs": [3130, 3131]
     },
     {
+        "note": "吴国时代3加成",
+        "action": "add",
+        "Comment": "Wu Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3143, 3144]
+    },
+    {
+        "note": "越国时代3加成",
+        "action": "add",
+        "Comment": "Yue Age 3 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3165, 3166]
+    },
+    {
         "note": "齐国时代4加成",
         "action": "add",
         "Comment": "Qi Age 4 Bonus",
@@ -174,5 +206,21 @@
         "Type": "MutuallyExclusive",
         "Instant": true,
         "Techs": [3132, 3133]
+    },
+    {
+        "note": "吴国时代4加成",
+        "action": "add",
+        "Comment": "Wu Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3145, 3146]
+    },
+    {
+        "note": "越国时代4加成",
+        "action": "add",
+        "Comment": "Yue Age 4 Bonus",
+        "Type": "MutuallyExclusive",
+        "Instant": true,
+        "Techs": [3167, 3168]
     }
 ]

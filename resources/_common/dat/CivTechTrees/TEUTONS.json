@@ -827,36 +827,20 @@
             "Trigger Tech ID": 207
         },
         {
-            "Name": "Two-Handed Swordsman",
-            "Node Type": "UnitUpgrade",
-            "Link Node Type": "UnitUpgrade",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
-            "Name String ID": 14411,
             "Age ID": 4,
             "Building ID": 12,
-            "Help String ID": 105411,
             "Link ID": 77,
-            "Node ID": 473,
-            "Picture Index": 12,
-            "Trigger Tech ID": 217
-        },
-        {
-            "Name": "Champion",
-            "Node Type": "UnitUpgrade",
             "Link Node Type": "UnitUpgrade",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
+            "Name": "Elite Swordsman",
+            "Name String ID": 1000056,
+            "Node ID": 4059,
             "Node Status": "ResearchedCompleted",
-            "Name String ID": 14469,
-            "Age ID": 4,
-            "Building ID": 12,
-            "Help String ID": 105469,
-            "Link ID": 473,
-            "Node ID": 567,
+            "Node Type": "UnitUpgrade",
             "Picture Index": 72,
-            "Trigger Tech ID": 264
+            "Trigger Tech ID": 3160,
+            "Use Type": "Unit",
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 1100056
         },
         {
             "Name": "Spearman",
@@ -1025,6 +1009,20 @@
             "Help String ID": 107258,
             "Node ID": 602,
             "Picture Index": 118
+        },
+        {
+            "Name": "Gambesons",
+            "Node Type": "Research",
+            "Link Node Type": "Research",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable",
+            "Name String ID": 17450,
+            "Age ID": 3,
+            "Building ID": 12,
+            "Help String ID": 107450,
+            "Node ID": 875,
+            "Picture Index": 116
         },
         {
             "Name": "Squires",

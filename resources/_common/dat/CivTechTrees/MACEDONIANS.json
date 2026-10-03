@@ -2430,7 +2430,7 @@
             "Link Node Type": "Research",
             "Draw Node Type": "UnitTech",
             "Use Type": "Tech",
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Name String ID": 17231,
             "Age ID": 4,
             "Building ID": 562,

@@ -41065,6 +41065,78 @@
         "TextureRef": "IconsMenuTechtreeEzsQiPressed",
         "AtlasRef": "ingameicons"
       }
+    },
+    {
+      "MaterialDef": {
+        "Name": "EzsWuIcon",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "EzsWuIcon",
+        "AtlasRef": "defaultwidgets"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsWu",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsWu",
+        "AtlasRef": "ingameicons"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsWuHover",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsWuHover",
+        "AtlasRef": "ingameicons"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsWuPressed",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsWuPressed",
+        "AtlasRef": "ingameicons"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "EzsYueIcon",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "EzsYueIcon",
+        "AtlasRef": "defaultwidgets"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsYue",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsYue",
+        "AtlasRef": "ingameicons"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsYueHover",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsYueHover",
+        "AtlasRef": "ingameicons"
+      }
+    },
+    {
+      "MaterialDef": {
+        "Name": "IconsMenuTechtreeEzsYuePressed",
+        "Type": "Atlas",
+        "Blend": "InverseAlpha",
+        "TextureRef": "IconsMenuTechtreeEzsYuePressed",
+        "AtlasRef": "ingameicons"
+      }
     }
   ],
   "AtlasTextures": [
@@ -47062,6 +47134,22 @@
           {
             "RefName": "EzsQiIcon",
             "FileName": "textures/menu/civs/ezsqi.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "EzsWuIcon",
+            "FileName": "textures/menu/civs/ezswu.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "EzsYueIcon",
+            "FileName": "textures/menu/civs/ezsyue.png",
             "imageTLX": "0.037109",
             "imageTLY": "0.740813",
             "imageBRX": "0.074002",
@@ -58090,6 +58178,54 @@
           {
             "RefName": "IconsMenuTechtreeEzsQiPressed",
             "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezsqi_pressed.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsWu",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezswu.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsWuHover",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezswu_hover.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsWuPressed",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezswu_pressed.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsYue",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezsyue.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsYueHover",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezsyue_hover.png",
+            "imageTLX": "0.037109",
+            "imageTLY": "0.740813",
+            "imageBRX": "0.074002",
+            "imageBRY": "0.777705"
+          },
+          {
+            "RefName": "IconsMenuTechtreeEzsYuePressed",
+            "FileName": "textures/ingame/icons/civ_techtree_buttons/menu_techtree_ezsyue_pressed.png",
             "imageTLX": "0.037109",
             "imageTLY": "0.740813",
             "imageBRX": "0.074002",

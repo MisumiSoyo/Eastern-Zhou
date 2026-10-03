@@ -2,10 +2,6 @@
 
 
 
-extern const int CivCount = 63;
-
-
-
 //  Custom Resource IDs
 extern const int EzsAttrLastRuleTime = 801;
 extern const int EzsAttrSuanfuProductivity = 802;
@@ -37,7 +33,6 @@ extern const int EzsWarChariotTechID = 3002;
 extern const int EliteEzsWarChariotTechID = 3003;
 extern const int EzsChariotArcherTechID = 3004;
 extern const int EliteEzsChariotArcherTechID = 3005;
-extern const int EzsScholarTechID = 3018;
 
 
 

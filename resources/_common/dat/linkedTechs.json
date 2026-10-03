@@ -263,6 +263,24 @@
             ]
         },
         {
+            "Comment": "Wu Age 2 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3141,
+                3142
+            ]
+        },
+        {
+            "Comment": "Yue Age 2 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3163,
+                3164
+            ]
+        },
+        {
             "Comment": "Instant Upgrade Bonus",
             "Instant": true,
             "Type": null,
@@ -308,7 +326,19 @@
                 3130,
                 3131,
                 3132,
-                3133
+                3133,
+                3141,
+                3142,
+                3143,
+                3144,
+                3145,
+                3146,
+                3163,
+                3164,
+                3165,
+                3166,
+                3167,
+                3168
             ]
         },
         {
@@ -375,6 +405,24 @@
             ]
         },
         {
+            "Comment": "Wu Age 3 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3143,
+                3144
+            ]
+        },
+        {
+            "Comment": "Yue Age 3 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3165,
+                3166
+            ]
+        },
+        {
             "Comment": "Qi Age 4 Bonus",
             "Type": "MutuallyExclusive",
             "Instant": true,
@@ -435,6 +483,24 @@
             "Techs": [
                 3132,
                 3133
+            ]
+        },
+        {
+            "Comment": "Wu Age 4 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3145,
+                3146
+            ]
+        },
+        {
+            "Comment": "Yue Age 4 Bonus",
+            "Type": "MutuallyExclusive",
+            "Instant": true,
+            "Techs": [
+                3167,
+                3168
             ]
         }
     ]

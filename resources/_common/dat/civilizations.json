@@ -324,28 +324,28 @@
       "era": "base"
     },
     {
-      "internal_name": "Vikings",
+      "internal_name": "EzsWu",
       "tech_tree_name": "VIKINGS",
       "data_name": "VIKING-CIV",
-      "hud_style": "CivNord",
-      "tech_tree_image_path": "/resources/civ_techtree/menu_techtree_vikings.png",
+      "hud_style": "CivAsia",
+      "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_wu.png",
       "emblem_image_path": "/resources/civ_emblems/vikings.png",
       "unique_unit_image_paths": [
-        "/resources/uniticons/038_50730.png"
+        "/resources/uniticons/436_50730.png"
       ],
-      "name_string_id": 10281,
-      "tech_tree_description_string_id": 120160,
-      "computer_name_string_table_offset": 4600,
-      "unique_tech_id_1": 49,
-      "unique_tech_id_2": 463,
-      "unique_unit_line": -281,
-      "unique_unit_upgrade_id": 398,
-      "unique_unit_id": 692,
-      "elite_unique_unit_id": 694,
+      "name_string_id": 4500008,
+      "tech_tree_description_string_id": 4600008,
+      "computer_name_string_table_offset": 3500700,
+      "unique_tech_id_1": 3158,
+      "unique_tech_id_2": 3159,
+      "unique_unit_line": -375,
+      "unique_unit_upgrade_id": 3153,
+      "unique_unit_id": 4057,
+      "elite_unique_unit_id": 4058,
       "unique_unit_string_ids": [
         {
-          "name": 5076,
-          "description": 26574
+          "name": 1000053,
+          "description": 1021053
         }
       ],
       "era": "base"
@@ -855,28 +855,38 @@
       "era": "base"
     },
     {
-      "internal_name": "Malay",
+      "internal_name": "EzsYue",
       "tech_tree_name": "MALAY",
       "data_name": "MALAY-CIV",
-      "hud_style": "CivSeas",
-      "tech_tree_image_path": "/resources/civ_techtree/menu_techtree_malay.png",
+      "hud_style": "CivAsia",
+      "tech_tree_image_path": "/resources/civ_techtree/ezs_techtree_yue.png",
       "emblem_image_path": "/resources/civ_emblems/malay.png",
       "unique_unit_image_paths": [
-        "/resources/uniticons/233_50730.png"
+        "/resources/uniticons/038_50730.png",
+        "/resources/uniticons/113_50730.png",
+        "/resources/uniticons/017_50730.png"
       ],
-      "name_string_id": 10299,
-      "tech_tree_description_string_id": 120178,
-      "computer_name_string_table_offset": 106100,
-      "unique_tech_id_1": 625,
-      "unique_tech_id_2": 624,
-      "unique_unit_line": -248,
-      "unique_unit_upgrade_id": 617,
-      "unique_unit_id": 1123,
-      "elite_unique_unit_id": 1125,
+      "name_string_id": 4500009,
+      "tech_tree_description_string_id": 4600009,
+      "computer_name_string_table_offset": 3500800,
+      "unique_tech_id_1": 3175,
+      "unique_tech_id_2": 3176,
+      "unique_unit_line": -373,
+      "unique_unit_upgrade_id": 3173,
+      "unique_unit_id": 4063,
+      "elite_unique_unit_id": 4064,
       "unique_unit_string_ids": [
         {
-          "name": 5148,
-          "description": 26148
+          "name": 1000060,
+          "description": 1021060
+        },
+        {
+          "name": 1000062,
+          "description": 1021062
+        },
+        {
+          "name": 1000057,
+          "description": 1021057
         }
       ],
       "era": "base"

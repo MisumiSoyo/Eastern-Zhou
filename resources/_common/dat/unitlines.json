@@ -95,7 +95,8 @@
                 77,
                 473,
                 567,
-                1793
+                1793,
+                4059
             ]
         },
         {
@@ -1246,6 +1247,53 @@
             "IDChain": [
                 4048,
                 4049
+            ]
+        },
+        {
+            "Name": "EZS Wu-Yue Warrior Line",
+            "Identifier": "ezs-wu-yue-warrior-line",
+            "LineID": -377,
+            "IDChain": [
+                4051,
+                4052,
+                4053
+            ]
+        },
+        {
+            "Name": "EZS Ge Ship Line",
+            "Identifier": "ezs-ge-ship-line",
+            "LineID": -376,
+            "IDChain": [
+                4054,
+                4055
+            ]
+        },
+        {
+            "Name": "EZS Jiangdong Archer Line",
+            "Identifier": "ezs-jiangdong-archer-line",
+            "LineID": -375,
+            "IDChain": [
+                4056,
+                4057
+            ]
+        },
+        {
+            "Name": "EZS Yue Archer Line",
+            "Identifier": "ezs-yue-archer-line",
+            "LineID": -374,
+            "IDChain": [
+                4060,
+                4061,
+                4062
+            ]
+        },
+        {
+            "Name": "EZS Noble Guard Line",
+            "Identifier": "ezs-noble-guard-line",
+            "LineID": -373,
+            "IDChain": [
+                4063,
+                4064
             ]
         }
     ]

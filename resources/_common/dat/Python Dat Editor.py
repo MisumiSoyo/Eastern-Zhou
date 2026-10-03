@@ -468,14 +468,53 @@ def applyTechChanges(data, tech_change_list, locked_ids=None):
 
 def applyTechTreeChanges(data, tech_tree_change_list):
     """
-    重建指定文明的科技树效果组：
-    清空该文明 tech_tree_id 效果组的全部 EffectCommand，
-    再按 enable/disable 列表写入 (8, 科技ID, 12, -1, 1/0) 命令。
+    处理指定文明科技树效果组 (civ.tech_tree_id 指向的 effect) 的科技开关。
+
+    每个 change 的字段:
+      civ_id 或 effect_id (二选一):
+        civ_id    —— int 或 int 列表 (省略=全部文明), 按各文明 tech_tree_id
+                    定位目标效果组 (历史行为)
+        effect_id —— int 或 int 列表, 绕过文明查找, 直接修改指定 effect 组。
+                    适合操作不属于文明科技树的自定义效果组。
+                    与 civ_id 同时给出会报错, 避免目标歧义。
+      enable/disable:         科技 ID 列表, 生成 (8, 科技ID, 12, -1, 1/0) 命令
+      mode (可选, 默认 "rebuild"):
+        "rebuild" —— 清空目标组全部 EffectCommand, 只写入 enable/disable 命令。
+                     历史默认行为。注意会一并清掉原组中的 type 102 科技树条目、
+                     101/103 文明加成命令, 以及任何自定义命令
+                     (例如 (1, 33, 0, -1, 10001) 的 XS 引导; 该模块在
+                     applyEffectChanges 之后执行, 后加进同组的命令也会被清掉)。
+        "merge"   —— 保留目标组原有命令, 只把 enable/disable 合并到组尾。
+                     同一科技若已存在 (8, id, 12, ...) 开关, 先剔除旧开关再写入,
+                     避免重复或 1/0 冲突; 其他来源 (b != 12) 的开关和非 type 8
+                     命令一律保留。适合"只在宿主科技树上开关个别科技, 其余保留"
+                     或需要让 XS 引导等自定义命令存活的场景。
     """
     for change in tech_tree_change_list:
-        civ_ids = normalizeIdList(change.get("civ_id"))
-        if civ_ids is None:
-            civ_ids = range(len(data.civs))
+        has_civ = "civ_id" in change
+        has_effect = "effect_id" in change
+        if has_civ and has_effect:
+            raise ValueError(
+                f"tech_tree_changes 不能同时指定 civ_id 和 effect_id, 请二选一, "
+                f"note: {change.get('note', '')}"
+            )
+
+        # 目标效果组解析: effect_id 直接定位; 否则按文明 tech_tree_id 查找
+        # (省略 civ_id 时沿用历史行为 = 全部文明)
+        if has_effect:
+            direct_ids = normalizeIdList(change["effect_id"])
+            if direct_ids is None:
+                direct_ids = list(range(len(data.effects)))
+            targets = [(None, eid) for eid in direct_ids]
+        else:
+            civ_ids = normalizeIdList(change.get("civ_id"))
+            if civ_ids is None:
+                civ_ids = range(len(data.civs))
+            targets = []
+            for civ_id in civ_ids:
+                if civ_id >= len(data.civs):
+                    continue
+                targets.append((civ_id, data.civs[civ_id].tech_tree_id))
 
         enable_ids = change.get("enable", [])
         disable_ids = change.get("disable", [])
@@ -483,6 +522,14 @@ def applyTechTreeChanges(data, tech_tree_change_list):
             enable_ids = [enable_ids]
         if isinstance(disable_ids, (int, float)):
             disable_ids = [disable_ids]
+        enable_ids = [int(x) for x in enable_ids]
+        disable_ids = [int(x) for x in disable_ids]
+        mode = change.get("mode", "rebuild")
+        if mode not in ("rebuild", "merge"):
+            raise ValueError(
+                f"不支持的 tech_tree_changes 模式: {mode} (仅支持 'rebuild' / 'merge'), "
+                f"note: {change.get('note', '')}"
+            )
 
         new_commands = [
             EffectCommand(type=8, a=int(tech_id), b=12, c=-1, d=1.0)
@@ -491,15 +538,30 @@ def applyTechTreeChanges(data, tech_tree_change_list):
             EffectCommand(type=8, a=int(tech_id), b=12, c=-1, d=0.0)
             for tech_id in disable_ids
         ]
+        toggle_ids = set(enable_ids) | set(disable_ids)
 
-        for civ_id in civ_ids:
-            if civ_id >= len(data.civs):
+        for civ_id, effect_id in targets:
+            if effect_id >= len(data.effects):
                 continue
-            effect_id = data.civs[civ_id].tech_tree_id
-            data.effects[effect_id].effect_commands = list(new_commands)
+            group = data.effects[effect_id].effect_commands
+
+            if mode == "merge":
+                # 剔除本组中同一科技的旧 (8, id, 12, ...) 开关, 其余命令全部保留
+                preserved = [
+                    cmd for cmd in group
+                    if not (cmd.type == 8 and cmd.b == 12 and cmd.a in toggle_ids)
+                ]
+                data.effects[effect_id].effect_commands = preserved + list(new_commands)
+                kept = len(preserved)
+            else:
+                data.effects[effect_id].effect_commands = list(new_commands)
+                kept = 0
+
             if "note" in change:
-                print(f"Note: {change['note']} (civ {civ_id}, effect {effect_id}): "
-                      f"{len(enable_ids)} enabled, {len(disable_ids)} disabled")
+                target_desc = f"effect {effect_id}" if civ_id is None else f"civ {civ_id}, effect {effect_id}"
+                print(f"Note: {change['note']} ({target_desc}, {mode}): "
+                      f"{len(enable_ids)} enabled, {len(disable_ids)} disabled, "
+                      f"{kept} original commands kept")
 
 
 def customChanges(data, lock_dict=None):
