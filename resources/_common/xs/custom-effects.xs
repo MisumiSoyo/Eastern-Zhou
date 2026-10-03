@@ -100,7 +100,7 @@ void EffectFunction10015(int playerId = -1)
 void main()
 {
     xsChatData("Mod: Eastern Zhou");
-    xsChatData("Patch: 1.1  2026.10.03");
+    xsChatData("Patch: 1.1a  2026.10.03");
     xsChatData("Author: Misumi Soyo");
 
     vector pos = xsVectorSet(0.0, 0.0, 0.0);

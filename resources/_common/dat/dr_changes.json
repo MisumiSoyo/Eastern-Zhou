@@ -1,2 +1,46 @@
 [
+    {
+        "action": "add",
+        "name": "Wu Lumberjack Male",
+        "building_id": 123,
+        "worker_object_group": 4,
+        "target_list":
+        [
+            {
+                "name": "Trees",
+                "object_group": 15,
+                "attribute_type": 1
+            }
+        ],
+        "update_ai_resource_types":
+        [
+            {
+                "resource_type": 1
+            }
+        ],
+        "target_civs": [11],
+        "position": "first"
+    },
+    {
+        "action": "add",
+        "name": "Wu Lumberjack Male",
+        "building_id": 218,
+        "worker_object_group": 4,
+        "target_list":
+        [
+            {
+                "name": "Trees",
+                "object_group": 15,
+                "attribute_type": 1
+            }
+        ],
+        "update_ai_resource_types":
+        [
+            {
+                "resource_type": 1
+            }
+        ],
+        "target_civs": [11],
+        "position": "first"
+    }
 ]
